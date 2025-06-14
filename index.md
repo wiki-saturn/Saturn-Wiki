@@ -4,7 +4,7 @@ layout: home
 hero:
   name: Saturn Wiki
   text: Добро пожаловать
-  tagline: Ваше руководство по использованию VPN
+  tagline: Простое руководство по использованию VPN
   actions:
     - theme: brand
       text: Начать изучение
