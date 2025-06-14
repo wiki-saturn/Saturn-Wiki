@@ -77,24 +77,6 @@ p, span, div, a, li {
 .VPHero {
  position: relative;
  overflow: hidden;
- padding-top: 120% !important;
- padding-bottom: 120% !important;
-}
-.VPHero .name {
- font-size: 110% !important;
-}
-.VPHero .text {
- font-size: 110% !important;
-}
-.VPHero .tagline {
- font-size: 110% !important;
-}
-.VPHero .actions {
- margin-top: 1.5em !important;
-}
-.VPHero .actions .VPButton {
- padding: 1.1em 2.2em !important;
- font-size: 110% !important;
 }
 .VPHero::before {
  content: '';
@@ -162,9 +144,5 @@ p, span, div, a, li {
    height: 45vw;
    right: -10%;
    top: 25%;
- }
- .VPHero {
-   padding-top: 110% !important;
-   padding-bottom: 110% !important;
  }
 }
