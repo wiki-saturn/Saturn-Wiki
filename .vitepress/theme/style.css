@@ -156,38 +156,37 @@ p, span, div, a, li {
   color: var(--vp-c-text-2);
 }
 
- .hint a {
-   color: var(--vp-c-brand-1);
-   text-decoration: none;
-   font-weight: 500;
+.hint a {
+  color: var(--vp-c-brand-1);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.hint a:hover {
+  color: var(--vp-c-brand-2);
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+ .VPHero::before {
+   width: 50vw;
+   height: 70vw;
+   right: 5%;
+   top: 0%;
  }
  
- .hint a:hover {
-   color: var(--vp-c-brand-2);
-   text-decoration: underline;
+ .VPHero::after {
+   width: 45vw;
+   height: 60vw;
+   right: -10%;
+   top: 25%;
  }
-
- @media (max-width: 768px) {
-  .VPHero::before {
-    width: 50vw;
-    height: 70vw;
-    right: 5%;
-    top: 0%;
-  }
-  
-  .VPHero::after {
-    width: 45vw;
-    height: 60vw;
-    right: -10%;
-    top: 25%;
-  }
-  
-  .intro-section {
-    padding: 40px 20px;
-  }
-  
-  .intro-content p {
-    font-size: 16px;
-  }
+ 
+ .intro-section {
+   padding: 40px 20px;
+ }
+ 
+ .intro-content p {
+   font-size: 16px;
  }
 }
