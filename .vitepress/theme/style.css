@@ -1,10 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
-
 :root {
   --vp-font-family-base: 'Raleway', sans-serif;
   --vp-font-family-mono: 'Raleway', monospace;
 }
-
 .dark {
   --vp-c-bg: #000000;
   --vp-c-bg-alt: #111111;
@@ -33,7 +31,6 @@
   --vp-nav-bg-color: #000000;
   --vp-sidebar-bg-color: #000000;
 }
-
 * {
   font-family: 'Raleway', sans-serif !important;
   font-variant-numeric: lining-nums;
@@ -44,7 +41,6 @@
   -webkit-font-feature-settings: "lnum" 1;
   font-feature-settings: "lnum" 1;
 }
-
 h1, h2, h3, h4, h5, h6,
 .VPNavBarTitle,
 .VPHero .name,
@@ -55,7 +51,6 @@ h1, h2, h3, h4, h5, h6,
   -webkit-font-feature-settings: "lnum" 1;
   font-feature-settings: "lnum" 1;
 }
-
 .VPDoc .content,
 .VPContent,
 p, span, div, a, li {
@@ -63,31 +58,20 @@ p, span, div, a, li {
   font-variant-numeric: lining-nums;
   font-feature-settings: "lnum" 1;
 }
-
 .VPHero {
   position: relative;
 }
-
-.VPHero::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: url('/saturn-logo.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  opacity: 0.1;
-  z-index: -1;
-}
-
 .VPHero .container {
   position: relative;
-  background-image: url('/saturn-logo.png');
-  background-size: 300px auto;
+  background-image: url('/hero.png');
+  background-size: 400px auto;
   background-repeat: no-repeat;
   background-position: right center;
   background-attachment: local;
+}
+@media (max-width: 768px) {
+  .VPHero .container {
+    background-size: 250px auto;
+    background-position: center bottom;
+  }
 }
