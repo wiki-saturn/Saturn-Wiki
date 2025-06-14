@@ -1,27 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+
+:root {
+ --vp-font-family-base: 'Raleway', sans-serif;
+ --vp-font-family-mono: 'Raleway', monospace;
+}
+
+* {
+ font-family: 'Raleway', sans-serif !important;
+ font-variant-numeric: lining-nums;
+ -moz-font-feature-settings: "lnum" 1;
+ -moz-font-feature-settings: "lnum=1";
+ -ms-font-feature-settings: "lnum" 1;
+ -o-font-feature-settings: "lnum" 1;
+ -webkit-font-feature-settings: "lnum" 1;
+ font-feature-settings: "lnum" 1;
+}
+
+h1, h2, h3, h4, h5, h6,
+.VPNavBarTitle,
+.VPHero .name,
+.VPHero .text,
+.VPHero .tagline {
+ font-family: 'Raleway', sans-serif !important;
+ font-variant-numeric: lining-nums;
+ -webkit-font-feature-settings: "lnum" 1;
+ font-feature-settings: "lnum" 1;
+}
+
+.VPDoc .content,
+.VPContent,
+p, span, div, a, li {
+ font-family: 'Raleway', sans-serif !important;
+ font-variant-numeric: lining-nums;
+ font-feature-settings: "lnum" 1;
+}
+
 .VPHero {
-  position: relative;
+ position: relative;
 }
 
 .VPHero::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: url('/saturn-logo.png'); /* Путь к вашему изображению */
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  opacity: 0.1; /* Прозрачность фона */
-  z-index: -1;
+ content: '';
+ position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ background-image: url('/saturn-logo.png');
+ background-size: contain;
+ background-repeat: no-repeat;
+ background-position: center;
+ opacity: 0.1;
+ z-index: -1;
 }
 
 .VPHero .container {
-  position: relative;
-  background-image: url('/saturn-logo.png');
-  background-size: 300px auto; /* Размер лого */
-  background-repeat: no-repeat;
-  background-position: right center;
-  background-attachment: local;
+ position: relative;
+ background-image: url('/saturn-logo.png');
+ background-size: 300px auto;
+ background-repeat: no-repeat;
+ background-position: right center;
+ background-attachment: local;
 }
