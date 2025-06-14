@@ -2,18 +2,6 @@
 :root {
  --vp-font-family-base: 'Raleway', sans-serif;
  --vp-font-family-mono: 'Raleway', monospace;
- 
- --vp-c-brand-1: #ff6200;
- --vp-c-brand-2: #ff7a26;
- --vp-c-brand-3: #ff924d;
- --vp-c-brand-soft: rgba(255, 98, 0, 0.16);
- 
- --vp-button-brand-border: #ff6200;
- --vp-button-brand-text: #ffffff;
- --vp-button-brand-bg: #ff6200;
- --vp-button-brand-hover-border: #ff7a26;
- --vp-button-brand-hover-text: #ffffff;
- --vp-button-brand-hover-bg: #ff7a26;
 }
 .dark {
  --vp-c-bg: #000000;
@@ -70,6 +58,10 @@ p, span, div, a, li {
  font-variant-numeric: lining-nums;
  font-feature-settings: "lnum" 1;
 }
+.VPNavBar .container {
+ max-width: 1152px;
+ margin: 0 auto;
+}
 .VPHero {
  position: relative;
  overflow: hidden;
@@ -78,60 +70,75 @@ p, span, div, a, li {
  content: '';
  position: absolute;
  top: -10%;
- right: 20%;
+ right: 10%;
  width: 45vw;
  height: 45vw;
  background: radial-gradient(circle, rgba(255, 98, 0, 0.4) 0%, rgba(255, 122, 38, 0.3) 40%, rgba(255, 146, 77, 0.2) 70%, transparent 100%);
  border-radius: 50%;
  filter: blur(60px);
  animation: float1 4s ease-in-out infinite;
- transform: rotate(30deg);
+ transform: rotate(25deg);
  z-index: -2;
 }
 .VPHero::after {
  content: '';
  position: absolute;
  top: 30%;
- right: 0%;
+ right: -5%;
  width: 40vw;
  height: 40vw;
  background: radial-gradient(circle, rgba(255, 146, 77, 0.5) 0%, rgba(255, 98, 0, 0.3) 50%, rgba(255, 200, 100, 0.2) 80%, transparent 100%);
  border-radius: 50%;
  filter: blur(50px);
  animation: float2 5s ease-in-out infinite reverse;
- transform: rotate(30deg);
+ transform: rotate(25deg);
  z-index: -1;
 }
 .VPHero .container {
  position: relative;
  z-index: 1;
 }
+.VPFeatures {
+ position: relative;
+ background: transparent;
+ z-index: 2;
+}
+.VPFeatures::before {
+ content: '';
+ position: absolute;
+ top: -100px;
+ left: 0;
+ right: 0;
+ height: 100px;
+ background: linear-gradient(to bottom, transparent, #000000);
+ z-index: -1;
+}
 @keyframes float1 {
- 0% { transform: rotate(30deg) translateY(0px) translateX(0px) scale(1); }
- 25% { transform: rotate(30deg) translateY(-2px) translateX(1.5px) scale(1.01); }
- 50% { transform: rotate(30deg) translateY(-1px) translateX(-2px) scale(0.99); }
- 75% { transform: rotate(30deg) translateY(1.5px) translateX(1px) scale(1.005); }
- 100% { transform: rotate(30deg) translateY(0px) translateX(0px) scale(1); }
+ 0% { transform: rotate(25deg) translateY(0px) translateX(0px) scale(1); }
+ 25% { transform: rotate(25deg) translateY(-7px) translateX(5px) scale(1.03); }
+ 50% { transform: rotate(25deg) translateY(-3px) translateX(-7px) scale(0.97); }
+ 75% { transform: rotate(25deg) translateY(5px) translateX(3px) scale(1.02); }
+ 100% { transform: rotate(25deg) translateY(0px) translateX(0px) scale(1); }
 }
 @keyframes float2 {
- 0% { transform: rotate(30deg) translateY(0px) translateX(0px) scale(1); }
- 20% { transform: rotate(30deg) translateY(1px) translateX(-2px) scale(0.985); }
- 40% { transform: rotate(30deg) translateY(-2.5px) translateX(1.5px) scale(1.015); }
- 60% { transform: rotate(30deg) translateY(1px) translateX(-1.5px) scale(0.995); }
- 80% { transform: rotate(30deg) translateY(-1px) translateX(2px) scale(1.01); }
- 100% { transform: rotate(30deg) translateY(0px) translateX(0px) scale(1); }
+ 0% { transform: rotate(25deg) translateY(0px) translateX(0px) scale(1); }
+ 20% { transform: rotate(25deg) translateY(4px) translateX(-6px) scale(0.95); }
+ 40% { transform: rotate(25deg) translateY(-8px) translateX(4px) scale(1.05); }
+ 60% { transform: rotate(25deg) translateY(3px) translateX(-5px) scale(0.98); }
+ 80% { transform: rotate(25deg) translateY(-4px) translateX(7px) scale(1.03); }
+ 100% { transform: rotate(25deg) translateY(0px) translateX(0px) scale(1); }
 }
 @media (max-width: 768px) {
  .VPHero::before {
    width: 50vw;
    height: 50vw;
-   right: 15%;
+   right: 5%;
    top: 0%;
  }
  .VPHero::after {
    width: 45vw;
    height: 45vw;
-   right: -5%;
+   right: -10%;
    top: 25%;
  }
 }
