@@ -58,36 +58,57 @@ p, span, div, a, li {
   font-variant-numeric: lining-nums;
   font-feature-settings: "lnum" 1;
 }
-.VPHero .container {
-  display: flex;
-  align-items: center;
-  gap: 60px;
-  padding: 60px 0;
+.VPHero {
+  position: relative;
+  overflow: hidden;
 }
-.VPHero .main {
-  flex: 1;
-}
-.VPHero .container::after {
+.VPHero::before {
   content: '';
+  position: absolute;
+  top: -50%;
+  right: -20%;
   width: 600px;
   height: 600px;
-  background-image: url('/Hero.webp');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  border: 1px solid #202020;
-  border-radius: 20px;
-  flex-shrink: 0;
+  background: radial-gradient(circle, rgba(255, 98, 0, 0.3) 0%, rgba(255, 122, 38, 0.2) 50%, transparent 70%);
+  border-radius: 50%;
+  filter: blur(40px);
+  animation: float1 6s ease-in-out infinite;
+  z-index: -1;
+}
+.VPHero::after {
+  content: '';
+  position: absolute;
+  top: 10%;
+  right: -10%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(255, 146, 77, 0.4) 0%, rgba(255, 98, 0, 0.2) 60%, transparent 80%);
+  border-radius: 50%;
+  filter: blur(30px);
+  animation: float2 8s ease-in-out infinite reverse;
+  z-index: -1;
+}
+.VPHero .container {
+  position: relative;
+  z-index: 1;
+}
+@keyframes float1 {
+  0%, 100% { transform: translateY(0px) scale(1); }
+  50% { transform: translateY(-30px) scale(1.1); }
+}
+@keyframes float2 {
+  0%, 100% { transform: translateY(0px) translateX(0px) scale(1); }
+  50% { transform: translateY(20px) translateX(-20px) scale(0.9); }
 }
 @media (max-width: 768px) {
-  .VPHero .container {
-    flex-direction: column;
-    gap: 40px;
-    padding: 40px 0;
+  .VPHero::before {
+    right: -50%;
+    width: 400px;
+    height: 400px;
   }
-  .VPHero .container::after {
-    width: 100%;
-    height: 200px;
-    order: -1;
+  .VPHero::after {
+    right: -30%;
+    width: 300px;
+    height: 300px;
   }
 }
