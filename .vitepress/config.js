@@ -18,9 +18,5 @@ export default {
         ]
       }
     ],
-    
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/SaturnConnect/Saturn-Wiki' }
-    ]
   }
 }
