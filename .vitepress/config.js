@@ -1,6 +1,7 @@
 export default {
   title: 'Saturn Wiki',
   description: 'Документация проекта Saturn',
+  base: '/Saturn-Wiki/',
   
   themeConfig: {
     nav: [
