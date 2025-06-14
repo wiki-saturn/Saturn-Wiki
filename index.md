@@ -12,6 +12,7 @@ hero:
     - theme: alt
       text: Открыть Telegram-бот
       link: https://t.me/SaturnVPN_bot?start=wiki
+---
 
 <div class="intro-section">
   <div class="intro-content">
