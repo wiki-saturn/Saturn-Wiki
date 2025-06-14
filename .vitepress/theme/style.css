@@ -76,7 +76,7 @@ p, span, div, a, li {
 }
 .VPHero {
  position: relative;
- overflow: visible;
+ overflow: hidden;
 }
 .VPHero::before {
  content: '';
@@ -90,7 +90,6 @@ p, span, div, a, li {
  filter: blur(60px);
  animation: float1 4s ease-in-out infinite;
  transform: rotate(25deg);
- z-index: -1;
 }
 .VPHero::after {
  content: '';
@@ -104,7 +103,6 @@ p, span, div, a, li {
  filter: blur(50px);
  animation: float2 5s ease-in-out infinite reverse;
  transform: rotate(25deg);
- z-index: -1;
 }
 .VPHero .container {
  position: relative;
@@ -118,13 +116,6 @@ p, span, div, a, li {
 .VPFeatures .VPFeature {
  position: relative;
  z-index: 1;
- background: rgba(255, 255, 255, 0.8);
- backdrop-filter: blur(10px);
- border-radius: 12px;
-}
-.dark .VPFeatures .VPFeature {
- background: rgba(26, 26, 26, 0.8);
- backdrop-filter: blur(10px);
 }
 @keyframes float1 {
  0% { transform: rotate(25deg) translateY(0px) translateX(0px) scale(1); }
