@@ -1,0 +1,27 @@
+.VPHero {
+  position: relative;
+}
+
+.VPHero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('/saturn-logo.png'); /* Путь к вашему изображению */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.1; /* Прозрачность фона */
+  z-index: -1;
+}
+
+.VPHero .container {
+  position: relative;
+  background-image: url('/saturn-logo.png');
+  background-size: 300px auto; /* Размер лого */
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-attachment: local;
+}
