@@ -10,8 +10,8 @@ hero:
       text: Начать изучение
       link: /guide/
     - theme: alt
-      text: Посмотреть на GitHub
-      link: https://github.com/SaturnConnect/Saturn-Wiki
+      text: Открыть Telegram-бот
+      link: https://t.me/SaturnVPN_bot?start=wiki
 
 features:
   - title: Простота использования
