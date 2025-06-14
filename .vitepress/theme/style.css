@@ -58,39 +58,36 @@ p, span, div, a, li {
   font-variant-numeric: lining-nums;
   font-feature-settings: "lnum" 1;
 }
-.VPHero {
-  position: relative;
-  min-height: 500px;
-}
 .VPHero .container {
-  position: relative;
-  background-image: url('/hero.png');
-  background-size: auto 100%;
-  background-repeat: no-repeat;
-  background-position: right center;
-  background-attachment: local;
-  min-height: 500px;
   display: flex;
   align-items: center;
+  gap: 60px;
+  padding: 60px 0;
+}
+.VPHero .container::before {
+  content: '';
+  width: 400px;
+  height: 300px;
+  background-image: url('/Hero.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 1px solid #666666;
+  border-radius: 12px;
+  flex-shrink: 0;
 }
 .VPHero .main {
   flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-right: 400px;
 }
 @media (max-width: 768px) {
-  .VPHero {
-    min-height: 400px;
-  }
   .VPHero .container {
-    min-height: 400px;
-    background-size: contain;
-    background-position: center bottom;
+    flex-direction: column-reverse;
+    gap: 40px;
+    padding: 40px 0;
   }
-  .VPHero .main {
-    padding-right: 0;
-    padding-bottom: 200px;
+  .VPHero .container::before {
+    width: 100%;
+    height: 200px;
+    order: -1;
   }
 }
