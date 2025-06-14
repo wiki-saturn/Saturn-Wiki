@@ -134,10 +134,15 @@ p, span, div, a, li {
 }
 
 .intro-section {
-  padding: 60px 24px;
-  max-width: 960px;
+  padding: 60px 0;
   margin: 0 auto;
   text-align: left;
+}
+
+.intro-content {
+  max-width: 1152px;
+  margin: 0 auto;
+  padding: 0 24px;
 }
 
 .intro-content p {
@@ -183,8 +188,8 @@ p, span, div, a, li {
    top: 25%;
  }
  
- .intro-section {
-   padding: 40px 20px;
+ .intro-content {
+   padding: 0 20px;
  }
  
  .intro-content p {
