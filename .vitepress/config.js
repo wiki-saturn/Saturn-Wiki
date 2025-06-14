@@ -3,6 +3,7 @@ export default {
   description: 'Документация проекта Saturn',
   
   themeConfig: {
+    logo: '/wiki.svg',
     nav: [
       { text: 'Главная', link: '/' },
       { text: 'Документация', link: '/guide/' }
