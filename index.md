@@ -3,8 +3,8 @@ layout: home
 
 hero:
   name: Saturn Wiki
-  text: Документация проекта
-  tagline: Полное руководство по использованию Saturn
+  text: Добро пожаловать
+  tagline: Ваше руководство по использованию VPN
   actions:
     - theme: brand
       text: Начать изучение
