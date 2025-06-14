@@ -33,7 +33,7 @@
  --vp-c-bg-alt: #111111;
  --vp-c-bg-elv: #1a1a1a;
  --vp-c-bg-soft: #0f0f0f;
- --vp-c-border: #333333;
+ --vp-c-border: #202020;
  --vp-c-divider: #2a2a2a;
  --vp-c-gutter: #1a1a1a;
  
@@ -125,12 +125,11 @@ p, span, div, a, li {
  position: relative;
  background: transparent;
  z-index: 1;
- padding: 60px 0;
+ padding: 30px 64px 0;
 }
 .VPFeatures .VPFeature {
   border: 1px solid var(--vp-c-border);
-  border-radius: 12px;
-  padding: 24px;
+  border-radius: 15px;
   background: var(--vp-c-bg-soft);
 }
 @keyframes float1 {
@@ -170,7 +169,7 @@ p, span, div, a, li {
   border: 1px solid var(--vp-c-border);
   border-radius: 12px;
   padding: 20px;
-  font-size: 20px;
+  font-size: 15px;
   line-height: 1.5;
   color: var(--vp-c-text-2);
 }
@@ -199,9 +198,6 @@ p, span, div, a, li {
    height: 60vw;
    right: -10%;
    top: 25%;
- }
- .VPFeatures {
-   padding: 40px 0;
  }
  
  .intro-content {
