@@ -2,6 +2,18 @@
 :root {
  --vp-font-family-base: 'Raleway', sans-serif;
  --vp-font-family-mono: 'Raleway', monospace;
+ 
+ --vp-c-brand-1: #ff6200;
+ --vp-c-brand-2: #ff7a26;
+ --vp-c-brand-3: #ff924d;
+ --vp-c-brand-soft: rgba(255, 98, 0, 0.16);
+ 
+ --vp-button-brand-border: #ff6200;
+ --vp-button-brand-text: #ffffff;
+ --vp-button-brand-bg: #ff6200;
+ --vp-button-brand-hover-border: #ff7a26;
+ --vp-button-brand-hover-text: #ffffff;
+ --vp-button-brand-hover-bg: #ff7a26;
 }
 .dark {
  --vp-c-bg: #000000;
@@ -65,27 +77,29 @@ p, span, div, a, li {
 .VPHero::before {
  content: '';
  position: absolute;
- top: -15%;
- right: -10%;
- width: 50vw;
- height: 50vw;
+ top: -10%;
+ right: 20%;
+ width: 45vw;
+ height: 45vw;
  background: radial-gradient(circle, rgba(255, 98, 0, 0.4) 0%, rgba(255, 122, 38, 0.3) 40%, rgba(255, 146, 77, 0.2) 70%, transparent 100%);
  border-radius: 50%;
  filter: blur(60px);
  animation: float1 4s ease-in-out infinite;
+ transform: rotate(30deg);
  z-index: -2;
 }
 .VPHero::after {
  content: '';
  position: absolute;
- top: 10%;
- right: -5%;
+ top: 30%;
+ right: 0%;
  width: 40vw;
  height: 40vw;
  background: radial-gradient(circle, rgba(255, 146, 77, 0.5) 0%, rgba(255, 98, 0, 0.3) 50%, rgba(255, 200, 100, 0.2) 80%, transparent 100%);
  border-radius: 50%;
  filter: blur(50px);
  animation: float2 5s ease-in-out infinite reverse;
+ transform: rotate(30deg);
  z-index: -1;
 }
 .VPHero .container {
@@ -93,29 +107,31 @@ p, span, div, a, li {
  z-index: 1;
 }
 @keyframes float1 {
- 0% { transform: translateY(0px) translateX(0px) scale(1) rotate(0deg); }
- 25% { transform: translateY(-20px) translateX(15px) scale(1.1) rotate(90deg); }
- 50% { transform: translateY(-10px) translateX(-20px) scale(0.9) rotate(180deg); }
- 75% { transform: translateY(15px) translateX(10px) scale(1.05) rotate(270deg); }
- 100% { transform: translateY(0px) translateX(0px) scale(1) rotate(360deg); }
+ 0% { transform: rotate(30deg) translateY(0px) translateX(0px) scale(1); }
+ 25% { transform: rotate(30deg) translateY(-2px) translateX(1.5px) scale(1.01); }
+ 50% { transform: rotate(30deg) translateY(-1px) translateX(-2px) scale(0.99); }
+ 75% { transform: rotate(30deg) translateY(1.5px) translateX(1px) scale(1.005); }
+ 100% { transform: rotate(30deg) translateY(0px) translateX(0px) scale(1); }
 }
 @keyframes float2 {
- 0% { transform: translateY(0px) translateX(0px) scale(1) rotate(0deg); }
- 20% { transform: translateY(12px) translateX(-18px) scale(0.85) rotate(72deg); }
- 40% { transform: translateY(-25px) translateX(12px) scale(1.15) rotate(144deg); }
- 60% { transform: translateY(8px) translateX(-15px) scale(0.95) rotate(216deg); }
- 80% { transform: translateY(-12px) translateX(20px) scale(1.08) rotate(288deg); }
- 100% { transform: translateY(0px) translateX(0px) scale(1) rotate(360deg); }
+ 0% { transform: rotate(30deg) translateY(0px) translateX(0px) scale(1); }
+ 20% { transform: rotate(30deg) translateY(1px) translateX(-2px) scale(0.985); }
+ 40% { transform: rotate(30deg) translateY(-2.5px) translateX(1.5px) scale(1.015); }
+ 60% { transform: rotate(30deg) translateY(1px) translateX(-1.5px) scale(0.995); }
+ 80% { transform: rotate(30deg) translateY(-1px) translateX(2px) scale(1.01); }
+ 100% { transform: rotate(30deg) translateY(0px) translateX(0px) scale(1); }
 }
 @media (max-width: 768px) {
  .VPHero::before {
-   width: 60vw;
-   height: 60vw;
-   right: -20%;
- }
- .VPHero::after {
    width: 50vw;
    height: 50vw;
-   right: -15%;
+   right: 15%;
+   top: 0%;
+ }
+ .VPHero::after {
+   width: 45vw;
+   height: 45vw;
+   right: -5%;
+   top: 25%;
  }
 }
