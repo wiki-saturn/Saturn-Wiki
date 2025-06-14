@@ -134,12 +134,11 @@ p, span, div, a, li {
 }
 
 .intro-section {
-  padding: 60px 0;
+  padding: 30px 0;
   text-align: left;
 }
 
 .intro-content {
-  padding: 0 24px;
   margin: 0 auto;
 }
 
