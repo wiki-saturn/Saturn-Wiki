@@ -216,7 +216,7 @@ p, span, div, a, li {
 @media (max-width: 768px) {
  .VPHero::before {
    width: 70vw;
-   height: 60vw;
+   height: 50vw;
    right: 10%;
    top: 0%;
  }
