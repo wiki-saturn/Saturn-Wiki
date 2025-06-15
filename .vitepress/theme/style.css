@@ -90,6 +90,10 @@ p, span, div, a, li {
  font-feature-settings: "lnum" 1;
 }
 
+p {
+ padding: 0 5px;
+}
+
 .VPNavBar .container {
  max-width: 1152px;
  margin: 0 auto;
