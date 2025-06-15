@@ -124,7 +124,6 @@ p, span, div, a, li {
 .VPFeatures {
  position: relative;
  background: transparent;
- z-index: 1;
  padding: 30px 64px 0;
 }
 .VPFeatures .VPFeature {
