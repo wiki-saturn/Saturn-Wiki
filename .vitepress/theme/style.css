@@ -215,16 +215,16 @@ p, span, div, a, li {
 
 @media (max-width: 768px) {
  .VPHero::before {
-   width: 50vw;
-   height: 70vw;
-   right: 5%;
+   width: 70vw;
+   height: 60vw;
+   right: 10%;
    top: 0%;
  }
  
  .VPHero::after {
    width: 45vw;
-   height: 60vw;
-   right: -10%;
+   height: 90vw;
+   right: 15%;
    top: 25%;
  }
  
