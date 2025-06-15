@@ -218,6 +218,11 @@ p {
 }
 
 @media (max-width: 768px) {
+ .VPNavBar {
+    position: static !important;
+    transform: none !important;
+ }
+ 
  .VPHero::before {
    width: 70vw;
    height: 50vw;
