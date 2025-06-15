@@ -103,6 +103,7 @@ p, span, div, a, li {
  filter: blur(60px);
  animation: float1 4s ease-in-out infinite;
  transform: rotate(25deg);
+ z-index: 5;
 }
 .VPHero::after {
  content: '';
@@ -116,16 +117,17 @@ p, span, div, a, li {
  filter: blur(50px);
  animation: float2 5s ease-in-out infinite reverse;
  transform: rotate(30deg);
+ z-index: 5;
 }
 .VPHero .container {
- background: transparent !important;
  position: relative;
  z-index: 10;
 }
 .VPFeatures {
  position: relative;
- background: transparent !important;
+ background: transparent;
  padding: 30px 64px 0;
+ z-index: 1;
 }
 .VPFeatures .VPFeature {
   border: 1px solid var(--vp-c-border);
