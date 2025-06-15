@@ -71,6 +71,14 @@
  font-feature-settings: "lnum" 1;
 }
 
+body {
+ overflow-x: hidden;
+}
+
+.VPApp {
+ overflow-x: hidden;
+}
+
 h1, h2, h3, h4, h5, h6,
  .VPNavBarTitle,
  .VPHero .name,
@@ -111,7 +119,7 @@ p, span, div, a, li {
  filter: blur(60px);
  animation: float1 4s ease-in-out infinite;
  transform: rotate(25deg);
- position: fixed;
+ position: absolute;
  pointer-events: none;
  z-index: -1;
 }
@@ -127,7 +135,7 @@ p, span, div, a, li {
  filter: blur(50px);
  animation: float2 5s ease-in-out infinite reverse;
  transform: rotate(15deg);
- position: fixed;
+ position: absolute;
  pointer-events: none;
  z-index: -1;
 }
