@@ -118,12 +118,13 @@ p, span, div, a, li {
  transform: rotate(30deg);
 }
 .VPHero .container {
+ background: transparent !important;
  position: relative;
  z-index: 10;
 }
 .VPFeatures {
  position: relative;
- background: transparent;
+ background: transparent !important;
  padding: 30px 64px 0;
 }
 .VPFeatures .VPFeature {
