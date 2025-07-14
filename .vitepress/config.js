@@ -282,6 +282,10 @@ export default defineConfig({
       prev: 'Предыдущая страница',
       next: 'Следующая страница'
     },
+    
+    lastUpdated: {
+      text: 'Последнее обновление'
+    },
 
     darkModeSwitchLabel: 'Тёмная тема',
     lightModeSwitchTitle: 'Переключить на светлую тему',
