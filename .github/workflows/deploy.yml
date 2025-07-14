@@ -1,47 +1,52 @@
+# Простой workflow для деплоя VitePress сайта на GitHub Pages
 name: Deploy VitePress site to Pages
 
 on:
+  # Запускается при пуше в main ветку
   push:
     branches: [main]
+
+  # Позволяет запускать workflow вручную из вкладки Actions
   workflow_dispatch:
 
+# Устанавливает права для GITHUB_TOKEN для деплоя на Pages
 permissions:
   contents: read
   pages: write
   id-token: write
 
+# Разрешает только один конкурентный деплой, пропуская выполняющиеся между ожидающими выполнения
+# Однако НЕ отменяет выполняющиеся, так как мы хотим разрешить завершение этих производственных деплоев
 concurrency:
   group: pages
   cancel-in-progress: false
 
 jobs:
+  # Задача сборки
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0
-
+          fetch-depth: 0 # Не нужно если lastUpdated не включен
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 18
-
+          node-version: 20
+          cache: npm
       - name: Setup Pages
         uses: actions/configure-pages@v4
-
       - name: Install dependencies
-        run: npm install
-
+        run: npm ci
       - name: Build with VitePress
-        run: npm run docs:build
-
+        run: npm run build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: .vitepress/dist
 
+  # Задача деплоя
   deploy:
     environment:
       name: github-pages
@@ -52,4 +57,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v4 

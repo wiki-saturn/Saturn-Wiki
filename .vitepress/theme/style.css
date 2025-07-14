@@ -1,248 +1,285 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
 
+/* Глобальные стили и цветовая схема */
 :root {
- --vp-font-family-base: 'Raleway', sans-serif;
- --vp-font-family-mono: 'Raleway', monospace;
- 
- --vp-c-brand-1: #ff6200;
- --vp-c-brand-2: #ff7a26;
- --vp-c-brand-3: #ff924d;
- --vp-c-brand-soft: rgba(255, 98, 0, 0.16);
- 
- --vp-button-brand-border: #ff6200;
- --vp-button-brand-text: #ffffff;
- --vp-button-brand-bg: #ff6200;
- --vp-button-brand-hover-border: #ff7a26;
- --vp-button-brand-hover-text: #ffffff;
- --vp-button-brand-hover-bg: #ff7a26;
+  /* Шрифты */
+  --vp-font-family-base: 'Raleway', sans-serif;
+  --vp-font-family-mono: 'Fira Code', 'SF Mono', Consolas, 'Liberation Mono', Menlo, monospace;
+  
+  /* Акцентный цвет для обеих тем */
+  --vp-c-brand-1: #FF6200;
+  --vp-c-brand-2: #FF6200;
+  --vp-c-brand-3: #FF6200;
+  --vp-c-brand-soft: rgba(255, 98, 0, 0.14);
+  --vp-c-brand-lighter: rgba(255, 98, 0, 0.1);
+  
+  /* Цвета для светлой темы */
+  --vp-button-brand-bg: #FF6200;
+  --vp-button-brand-hover-bg: #E55700;
+  --vp-button-brand-active-bg: #CC4D00;
+  
+  /* Alt кнопки для светлой темы */
+  --vp-button-alt-bg: #f6f6f7;
+  --vp-button-alt-hover-bg: #d5d5d5;
+  --vp-button-alt-text: #383838;
+  --vp-button-alt-hover-text: #000000;
+  
+  /* Подсказки для светлой темы */
+  --vp-c-bg-tooltip: #d9d9d9;
+  --vp-c-text-tooltip: #ffffff;
 }
 
-.light {
- --vp-c-bg: #ffffff;
- --vp-c-bg-alt: #f6f6f7;
- --vp-c-bg-elv: #ffffff;
- --vp-c-bg-soft: #f6f6f7;
- --vp-c-border: #eeeeee;
- --vp-c-divider: #e2e2e3;
- --vp-c-gutter: #f6f6f7;
- 
- --vp-c-text-1: #1f1f22;
- --vp-c-text-2: #59595e;
- --vp-c-text-3: #7c8b9a;
-}
-
+/* Тёмная тема */
 .dark {
- --vp-c-bg: #000000;
- --vp-c-bg-alt: #111111;
- --vp-c-bg-elv: #1a1a1a;
- --vp-c-bg-soft: #0f0f0f;
- --vp-c-border: #202020;
- --vp-c-divider: #2a2a2a;
- --vp-c-gutter: #1a1a1a;
- 
- --vp-c-brand-1: #ff6200;
- --vp-c-brand-2: #ff7a26;
- --vp-c-brand-3: #ff924d;
- --vp-c-brand-soft: rgba(255, 98, 0, 0.16);
- 
- --vp-button-brand-border: #ff6200;
- --vp-button-brand-text: #ffffff;
- --vp-button-brand-bg: #ff6200;
- --vp-button-brand-hover-border: #ff7a26;
- --vp-button-brand-hover-text: #ffffff;
- --vp-button-brand-hover-bg: #ff7a26;
- 
- --vp-c-text-1: #ffffff;
- --vp-c-text-2: #e0e0e0;
- --vp-c-text-3: #c0c0c0;
- 
- --vp-nav-bg-color: rgba(0, 0, 0, 0.8);
- --vp-sidebar-bg-color: rgba(0, 0, 0, 0.8);
+  /* Фон тёмной темы */
+  --vp-c-bg: #101010;
+  --vp-c-bg-alt: #1a1a1a;
+  --vp-c-bg-elv: #202020;
+  --vp-c-bg-soft: #1f1f1f;
+  
+  /* Акцентный цвет в тёмной теме */
+  --vp-c-brand-1: #FF6200;
+  --vp-c-brand-2: #FF6200;
+  --vp-c-brand-3: #FF6200;
+  --vp-c-brand-soft: rgba(255, 98, 0, 0.16);
+  --vp-c-brand-lighter: rgba(255, 98, 0, 0.12);
+  
+  --vp-button-brand-bg: #FF6200;
+  --vp-button-brand-hover-bg: #FF7A26;
+  --vp-button-brand-active-bg: #E55700;
 
+  --vp-sidebar-bg-color: #000000;
+
+  --vp-button-alt-bg: #202020;
+  --vp-button-alt-hover-bg: #303030;
+  --vp-button-alt-text: #ffffff;
+  --vp-button-alt-hover-text: #ffffff;
+  --vp-custom-block-info-bg: #202020;
+  --vp-custom-block-info-border: #202020;
+
+  /* Подсказки для тёмной темы */
+  --vp-c-bg-tooltip: #202020;
+  --vp-c-text-tooltip: #ffffff;
 }
 
 * {
- font-family: 'Raleway', sans-serif !important;
- font-variant-numeric: lining-nums;
- -moz-font-feature-settings: "lnum" 1;
- -moz-font-feature-settings: "lnum=1";
- -ms-font-feature-settings: "lnum" 1;
- -o-font-feature-settings: "lnum" 1;
- -webkit-font-feature-settings: "lnum" 1;
- font-feature-settings: "lnum" 1;
+  font-family: 'Raleway', sans-serif;
+  font-variant-numeric: lining-nums;
+  -moz-font-feature-settings: "lnum" 1; 
+  -moz-font-feature-settings: "lnum=1"; 
+  -ms-font-feature-settings: "lnum" 1; 
+  -o-font-feature-settings: "lnum" 1; 
+  -webkit-font-feature-settings: "lnum" 1; 
+  font-feature-settings: "lnum" 1;
 }
 
-h1, h2, h3, h4, h5, h6,
- .VPNavBarTitle,
- .VPHero .name,
- .VPHero .text,
- .VPHero .tagline {
- font-family: 'Raleway', sans-serif !important;
- font-variant-numeric: lining-nums;
- -webkit-font-feature-settings: "lnum" 1;
- font-feature-settings: "lnum" 1;
+/* Дополнительные стили для лучшей типографики */
+.VPDoc h1{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 1000;
 }
 
-.VPDoc .content,
-.VPContent,
-p, span, div, a, li {
- font-family: 'Raleway', sans-serif !important;
- font-variant-numeric: lining-nums;
- font-feature-settings: "lnum" 1;
+.VPDoc h2, .VPDoc h3, .VPDoc h4, .VPDoc h5, .VPDoc h6{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
 }
 
-p {
- padding: 0 5px;
+.VPDoc p, .VPDoc li {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
 }
 
-.VPNavBar .container {
- max-width: 1152px;
- margin: 0 auto;
+.VPHero .name, .VPHero .text {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
 }
 
-.VPNavBar {
- backdrop-filter: blur(8px);
- -webkit-backdrop-filter: blur(8px);
+.VPHero .tagline {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
 }
 
-.VPHero {
- position: relative;
- overflow: visible;
+/* Навигация */
+.VPNav .title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
 }
 
-.VPHero::before {
- content: '';
- top: 0%;
- right: 5%;
- width: 60vw;
- height: 20vw;
- background: radial-gradient(circle, rgba(255, 98, 0, 0.4) 0%, rgba(255, 122, 38, 0.3) 40%, rgba(255, 146, 77, 0.2) 70%, transparent 100%);
- border-radius: 50%;
- filter: blur(60px);
- animation: float1 4s ease-in-out infinite;
- transform: rotate(25deg);
- position: absolute;
- pointer-events: none;
- z-index: -1;
+.VPNavBarMenuLink {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
 }
 
-.VPHero::after {
- content: '';
- top: 30%;
- right: 5%;
- width: 55vw;
- height: 25vw;
- background: radial-gradient(circle, rgba(255, 146, 77, 0.5) 0%, rgba(255, 98, 0, 0.3) 50%, rgba(255, 200, 100, 0.2) 80%, transparent 100%);
- border-radius: 50%;
- filter: blur(50px);
- animation: float2 5s ease-in-out infinite reverse;
- transform: rotate(15deg);
- position: absolute;
- pointer-events: none;
- z-index: -1;
+/* Сайдбар */
+.VPSidebarItem .text {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
 }
 
-.VPHero .container {
- position: relative;
- z-index: 10;
+/* Кнопки */
+.VPButton {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
 }
 
-.VPHome {
- background: transparent !important;
+  .VPHero .image-src {
+    filter: drop-shadow(0 0 10px rgba(255, 98, 0, 0.8)) 
+            drop-shadow(0 0 20px rgba(255, 98, 0, 0.6)) 
+            drop-shadow(0 0 60px rgba(255, 98, 0, 0.3));
+    animation: glow-pulse 6s ease-in-out infinite alternate;
+  }
+
+  .VPHero .image-bg::before {
+    animation: glow-pulse 6s ease-in-out infinite alternate;
+  }
+
+  @keyframes glow-pulse {
+    0% {
+      filter: drop-shadow(0 0 15px rgba(255, 98, 0, 0.459)) 
+              drop-shadow(0 0 60px rgba(255, 98, 0, 0.4));
+    }
+    100% {
+      filter: drop-shadow(0 0 40px rgba(255, 98, 0, 0.9)) 
+              drop-shadow(0 0 80px rgba(255, 98, 0, 0.5));
+    }
+  }
+
+/* Настройки таблиц */
+.VPDoc table,
+.vp-doc table,
+table {
+  width: 100% !important;
+  table-layout: auto !important;
+  border-collapse: collapse;
+  display: table !important;
 }
 
-.VPFeatures {
- position: relative;
- background: transparent !important;
- padding: 30px 64px 0;
+.VPDoc th, 
+.VPDoc td,
+.vp-doc th,
+.vp-doc td,
+th, td {
+  width: auto !important;
+  text-align: left;
+  vertical-align: top;
 }
 
-.VPFeatures .container {
- background: transparent !important;
+/* Дополнительные правила для контейнера таблицы */
+.VPDoc .table-container,
+.vp-doc .table-container {
+  width: 100% !important;
+  overflow-x: auto;
 }
 
-.VPFeatures .VPFeature {
- border: 1px solid var(--vp-c-border);
- border-radius: 15px;
- background: var(--vp-c-bg-soft);
- position: relative;
- z-index: 2;
+/* Глобальные правила для всех таблиц */
+.vitepress-content table,
+.content table,
+article table,
+main table {
+  width: 100% !important;
+  max-width: 100% !important;
+  table-layout: auto !important;
 }
 
-@keyframes float1 {
- 0% { transform: rotate(25deg) translateY(0px) translateX(0px) scale(1); }
- 25% { transform: rotate(25deg) translateY(-7px) translateX(5px) scale(1.03); }
- 50% { transform: rotate(25deg) translateY(-3px) translateX(-7px) scale(0.97); }
- 75% { transform: rotate(25deg) translateY(5px) translateX(3px) scale(1.02); }
- 100% { transform: rotate(25deg) translateY(0px) translateX(0px) scale(1); }
+/* Правила для markdown контента */
+.markdown-body table {
+  width: 100% !important;
+  display: table !important;
 }
 
-@keyframes float2 {
- 0% { transform: rotate(15deg) translateY(0px) translateX(0px) scale(1); }
- 20% { transform: rotate(15deg) translateY(4px) translateX(-6px) scale(0.95); }
- 40% { transform: rotate(15deg) translateY(-8px) translateX(4px) scale(1.05); }
- 60% { transform: rotate(15deg) translateY(3px) translateX(-5px) scale(0.98); }
- 80% { transform: rotate(15deg) translateY(-4px) translateX(7px) scale(1.03); }
- 100% { transform: rotate(15deg) translateY(0px) translateX(0px) scale(1); }
+/* Скрытие полосы прокрутки в сайдбаре */
+.VPSidebar,
+.VPSidebarNav,
+.sidebar {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE и Edge */
 }
 
-.intro-section {
- padding: 30px 0;
- text-align: left;
+/* Webkit - скрытие полосы прокрутки для сайдбара */
+.VPSidebar::-webkit-scrollbar,
+.VPSidebarNav::-webkit-scrollbar,
+.sidebar::-webkit-scrollbar {
+  display: none;
 }
 
-.intro-content {
- margin: 0 auto;
+/* Кастомная полоса прокрутки для остального контента */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--vp-c-bg-soft) transparent;
 }
 
-.intro-content p {
- font-size: 18px;
- line-height: 1.6;
- color: var(--vp-c-text-1);
- margin-bottom: 40px;
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
 }
 
-.hint {
- background: var(--vp-c-bg-soft);
- border: 1px solid var(--vp-c-border);
- border-radius: 12px;
- padding: 20px;
- font-size: 15px;
- line-height: 1.5;
- color: var(--vp-c-text-2);
+*::-webkit-scrollbar-track {
+  background: transparent;
 }
 
-.hint a {
- color: var(--vp-c-brand-1);
- text-decoration: none;
- font-weight: 500;
+*::-webkit-scrollbar-thumb {
+  background: var(--vp-c-brand-1);
+  border-radius: 4px;
+  opacity: 0.5;
+  transition: opacity 0.2s ease;
 }
 
-.hint a:hover {
- color: var(--vp-c-brand-2);
- text-decoration: underline;
+*::-webkit-scrollbar-thumb:hover {
+  background: var(--vp-c-brand-2);
+  opacity: 0.8;
 }
 
+*::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* Стили для medium-zoom */
+.medium-zoom-overlay {
+  background: rgba(248, 248, 248, 0.4) !important;
+  backdrop-filter: blur(6px);
+  z-index: 9999 !important;
+}
+
+/* Темная тема для overlay */
+.dark .medium-zoom-overlay {
+  background: rgba(0, 0, 0, 0.4) !important;
+}
+
+.medium-zoom-image {
+  cursor: zoom-out !important;
+  border-radius: 8px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  z-index: 10000 !important;
+}
+
+.medium-zoom-image--opened {
+  cursor: zoom-out !important;
+  z-index: 10000 !important;
+}
+
+/* Стили для изображений в документации */
+.VPDoc img,
+.vp-doc img {
+  cursor: zoom-in;
+  transition: transform 0.2s ease;
+  border-radius: 0px;
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0);
+}
+
+/* Убираем zoom-курсор с изображений карточек */
+.icon-image {
+  cursor: default !important;
+}
+
+/* Отключаем зум-эффекты на мобильных устройствах */
 @media (max-width: 768px) {
- .VPNavBar {
-   position: relative !important;
- }
- 
- .VPHero::before {
-   width: 70vw;
-   height: 50vw;
-   right: 10%;
-   top: 0%;
- }
- 
- .VPHero::after {
-   width: 45vw;
-   height: 90vw;
-   right: 15%;
-   top: 25%;
- }
- 
- .intro-content p {
-   font-size: 16px;
- }
+  .VPDoc img,
+  .vp-doc img {
+    cursor: default;
+  }
+  
+  .VPDoc img:hover,
+  .vp-doc img:hover {
+    transform: none;
+  }
 }
