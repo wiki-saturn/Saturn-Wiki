@@ -4,10 +4,9 @@ Allow: /
 # Sitemap
 Sitemap: https://saturn-network.com/sitemap.xml
 
-# Crawl-delay для вежливого краулинга
+# Crawl-delay
 Crawl-delay: 1
 
-# Блокируем служебные директории
 Disallow: /.vitepress/
 Disallow: /node_modules/
 Disallow: /.git/ 
