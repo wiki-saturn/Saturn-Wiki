@@ -2,32 +2,34 @@
 layout: home
 
 hero:
-  name: Saturn Wiki
-  text: Добро пожаловать
-  tagline: Простое руководство по использованию VPN
+  name: "Saturn Wiki"
+  text: "VPN нового поколения прямо в Telegram"
+  tagline: Легко верните доступ к YouTube, TikTok, Twitch, ChatGPT и другим ресурсам с надежным решением на протоколе VLESS.
+  image:
+    src: /hero-logo.svg
+    alt: Saturn Wiki Logo
   actions:
     - theme: brand
-      text: Начать изучение
-      link: /guide/
-    - theme: alt
       text: Открыть Telegram-бот
-      link: https://t.me/SaturnVPN_bot?start=wiki
-
-features:
-  - title: Исследуйте инструкции
-    details: Изучайте статьи по настройке VPN и работе с сервисом
-  - title: Находите решения
-    details: Подробные инструкции для решения типичных проблем и задач
-  - title: Получайте поддержку
-    details: Обращайтесь в службу поддержки для получения персональной помощи
+      link: https://t.me/SaturnVPN_bot?start=docs
+    - theme: brand
+      text: Служба поддержки
+      link: https://t.me/SaturnVPN_Support
+    - theme: brand
+      text: Telegram канал
+      link: https://t.me/SaturnVPN_News
+    - theme: alt
+      text: Как пользоваться ботом?
+      link: /bot-guide/
+    - theme: alt
+      text: Настройка VPN на устройстве
+      link: /setup-guide/
 ---
 
-<div class="intro-section">
-<div class="intro-content">
-<p><strong>Saturn VPN</strong> предоставляет Вам надежное и удобное решение для простого доступа к необходимым ресурсам в интернете. Откройте для себя мир безопасного и свободного доступа к сети уже сегодня! Для навигации на мобильном устройстве раскройте меню в левом верхнем углу.</p>
+::: info Навигация по Wiki на мобильном устройстве 
+Для навигации по базе знаний используйте меню <img src="/icons/menu.svg" alt="Меню" style="display: inline; height: 2em; vertical-align: middle; margin: 0 2px;"> сверху
+:::
 
-<div class="hint">
-Если интересующей информации нет в базе знаний, Вы можете обратиться в службу технической поддержки <a href="https://t.me/SaturnVPN_Support" target="_blank">@SaturnVPN_Support</a> - мы всегда на связи и готовы помочь!
-</div>
-</div>
-</div>
+::: info Нужна помощь?
+Если интересующей информации нет в базе знаний, вы можете обратиться в службу поддержки [@SaturnVPN_Support](https://t.me/SaturnVPN_Support) - мы всегда на связи и готовы помочь!
+::: 
