@@ -1,6 +1,5 @@
 import { defineConfig } from 'vitepress'
 
-// Функция для генерации мета-тегов на основе контента страницы
 function generateMetaTags(title, description, url) {
   return [
     ['meta', { property: 'og:title', content: title }],
@@ -16,34 +15,28 @@ export default defineConfig({
   title: 'Saturn Wiki',
   description: 'Вся необходимая информация для клиентов Saturn VPN, собранная в одном месте. Инструкции по установке и настройке VPN с протоколом VLESS для приложений v2RayTun, v2RayN, v2rayNG, V2Box, Streisand, Nekoray и Hiddify',
   
-  // Базовый URL для GitHub Pages (замените на название вашего репозитория)
   base: '/',
   
-  // Основной язык (в будущем станет root в locales)
   lang: 'ru-RU',
   
-  // Настройки Vite для обработки медиа файлов
   vite: {
     assetsInclude: ['**/*.mp4', '**/*.MP4', '**/*.webm', '**/*.WEBM', '**/*.mov', '**/*.MOV', '**/*.avi', '**/*.AVI']
   },
   
   head: [
-    // Базовые мета-теги
     ['meta', { charset: 'utf-8' }],
     ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1' }],
     ['meta', { 'http-equiv': 'X-UA-Compatible', content: 'IE=edge' }],
     
-    // SEO мета-теги
     ['meta', { name: 'robots', content: 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1' }],
     ['meta', { name: 'googlebot', content: 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1' }],
     ['meta', { name: 'author', content: 'Saturn VPN' }],
     ['meta', { name: 'generator', content: 'VitePress' }],
-    ['meta', { name: 'theme-color', content: '#FF6200' }],
+    ['meta', { name: 'theme-color', content: '#101010' }],
     
-    // Open Graph мета-теги
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:site_name', content: 'Saturn Wiki' }],
-    ['meta', { property: 'og:title', content: 'Saturn Wiki - VPN инструкции и настройка' }],
+    ['meta', { property: 'og:title', content: 'Saturn Wiki - База знаний для клиентов Saturn VPN' }],
     ['meta', { property: 'og:description', content: 'Полная база знаний Saturn VPN. Инструкции по установке и настройке VPN приложений для всех платформ: Windows, Android, iOS, macOS, Linux' }],
     ['meta', { property: 'og:image', content: 'https://saturn-network.com/hero-logo.svg' }],
     ['meta', { property: 'og:image:width', content: '1200' }],
@@ -52,7 +45,6 @@ export default defineConfig({
     ['meta', { property: 'og:url', content: 'https://saturn-network.com' }],
     ['meta', { property: 'og:locale', content: 'ru_RU' }],
     
-    // Twitter Card мета-теги
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
     ['meta', { name: 'twitter:site', content: '@SaturnVPN' }],
     ['meta', { name: 'twitter:creator', content: '@SaturnVPN' }],
@@ -61,33 +53,27 @@ export default defineConfig({
     ['meta', { name: 'twitter:image', content: 'https://saturn-network.com/hero-logo.svg' }],
     ['meta', { name: 'twitter:image:alt', content: 'Saturn VPN Logo' }],
     
-    // Ключевые слова
     ['meta', { name: 'keywords', content: 'Saturn VPN, VLESS, v2ray, vpn инструкции, настройка vpn, v2raytun, hiddify, nekoray, telegram vpn bot, vpn android, vpn ios, vpn windows, vpn macos, vpn linux' }],
     
-    // Дополнительные SEO теги
     ['meta', { name: 'format-detection', content: 'telephone=no' }],
     ['meta', { name: 'mobile-web-app-capable', content: 'yes' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black-translucent' }],
     ['meta', { name: 'apple-mobile-web-app-title', content: 'Saturn Wiki' }],
     
-    // Favicon и иконки
     ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }],
     ['link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/logo.svg' }],
     ['link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/logo.svg' }],
     ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: '/logo.svg' }],
     ['link', { rel: 'mask-icon', href: '/logo.svg', color: '#FF6200' }],
     
-    // Канонический URL и альтернативные языки
     ['link', { rel: 'canonical', href: 'https://saturn-network.com' }],
     ['link', { rel: 'alternate', hreflang: 'ru', href: 'https://saturn-network.com' }],
     ['link', { rel: 'alternate', hreflang: 'x-default', href: 'https://saturn-network.com' }],
     
-    // Preconnect для оптимизации
     ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
     ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }],
     
-    // Schema.org JSON-LD
     ['script', { type: 'application/ld+json' }, JSON.stringify({
       '@context': 'https://schema.org',
       '@type': 'WebSite',
@@ -124,18 +110,14 @@ export default defineConfig({
     }
   },
   
-  // Дополнительные SEO настройки
   lastUpdated: true,
   metaChunk: true,
   
-  // Оптимизация производительности
   cacheDir: './.vitepress/cache',
   
-  // Трансформация head для SEO
   transformHead: ({ pageData }) => {
     const head = []
     
-    // Добавляем динамические мета-теги на основе frontmatter
     if (pageData.frontmatter.title) {
       head.push(['meta', { property: 'og:title', content: pageData.frontmatter.title }])
       head.push(['meta', { name: 'twitter:title', content: pageData.frontmatter.title }])
@@ -147,7 +129,6 @@ export default defineConfig({
       head.push(['meta', { name: 'twitter:description', content: pageData.frontmatter.description }])
     }
     
-    // Канонический URL для каждой страницы
     const canonicalUrl = `https://saturn-network.com${pageData.relativePath.replace(/\.md$/, '')}`
     head.push(['link', { rel: 'canonical', href: canonicalUrl }])
     head.push(['meta', { property: 'og:url', content: canonicalUrl }])
@@ -164,7 +145,6 @@ export default defineConfig({
     ],
 
     sidebar: {
-      // Сайдбар для раздела "Работа с ботом"
       '/bot-guide/': [
         {
           text: 'Работа с ботом',
@@ -191,7 +171,6 @@ export default defineConfig({
         },
       ],
 
-      // Сайдбар для раздела "Настройка на устройстве"  
       '/setup-guide/': [
         {
           text: 'Подключение к VPN на устройстве', link: '/setup-guide/' 
@@ -250,7 +229,6 @@ export default defineConfig({
         }
       ],
 
-      // Сайдбар для раздела "Устранение проблем"
       '/troubleshoot/': [
         {
           text: 'Устранение проблем',
@@ -295,7 +273,6 @@ export default defineConfig({
       }
     },
 
-    // Локализация интерфейса
     outline: {
       label: 'Содержание страницы',
       level: [2, 3, 4]
@@ -306,17 +283,14 @@ export default defineConfig({
       next: 'Следующая страница'
     },
 
-    // Переключатель темы
     darkModeSwitchLabel: 'Тёмная тема',
     lightModeSwitchTitle: 'Переключить на светлую тему',
     darkModeSwitchTitle: 'Переключить на тёмную тему',
 
-    // Другие элементы интерфейса
     sidebarMenuLabel: 'Меню',
     returnToTopLabel: 'Вернуться наверх',
     langMenuLabel: 'Изменить язык',
 
-    // Страница 404
     notFound: {
       title: 'СТРАНИЦА НЕ НАЙДЕНА',
       quote: 'Вернитесь на главную страницу и используйте меню или поиск для навигации по базе знаний.',
@@ -324,7 +298,6 @@ export default defineConfig({
       linkText: 'Вернуться на главную'
     },
 
-    // Локализация подсказок
     container: {
       tip: 'Подсказка',
       info: 'Информация', 
