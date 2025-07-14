@@ -1,6 +1,6 @@
 # Контакты
 
-![saturn](/public/contacts.webp)
+![saturn](/contacts.webp)
 
 
 - **Официальный Telegram-бот:** [@SaturnVPN_bot](https://t.me/SaturnVPN_bot?start=docs)

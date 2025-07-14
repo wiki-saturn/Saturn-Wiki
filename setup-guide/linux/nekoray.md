@@ -41,7 +41,7 @@ wget -qO- https://raw.githubusercontent.com/ohmydevops/nekoray-installer/main/in
 ```
 После завершения выполнения скрипта ярлык будет добавлен в меню приложений.
 
-![Установка](/public/pages/linux/nekoray/1.webp)
+![Установка](/pages/linux/nekoray/1.webp)
 
 Скрипт из репозитория [ohmydevops/nekoray-installer](https://github.com/ohmydevops/nekoray-installer) (автор: [ohmydevops](https://github.com/ohmydevops)).
 :::
@@ -49,7 +49,7 @@ wget -qO- https://raw.githubusercontent.com/ohmydevops/nekoray-installer/main/in
 ::: details Установка на Debian, Ubuntu и им подобных дистрибутивах
 1. Загрузите образ [nekoray-4.0.1-2024-12-12-debian-x64.deb](https://github.com/MatsuriDayo/nekoray/releases/download/4.0.1/nekoray-4.0.1-2024-12-12-debian-x64.deb) с приложением Nekoray для Debian/Ubuntu с GitHub
 2. Откройте загруженный `.deb` файл в вашем центре приложений и установите приложение
-![Установка](/public/pages/linux/nekoray/2.webp)
+![Установка](/pages/linux/nekoray/2.webp)
 :::
 
 ::: details Установка на других дистрибутивах 
@@ -112,7 +112,7 @@ kbuildsycoca5
 2. Нажмите «Сервер» → «Добавить из буфера обмена» или зажмите сочетание клавиш Ctrl+V
 3. В появившемся окне выберите «Как подписку (создать новую группу)»
 
-![Импорт конфигурации](/public/pages/linux/nekoray/3.webp)
+![Импорт конфигурации](/pages/linux/nekoray/3.webp)
 
 ## Шаг 3. Настройте приложение перед подключением
 
@@ -120,7 +120,7 @@ kbuildsycoca5
 2. Поставьте галочку в чекбоксе «Автоматическое обновление»
 3. Нажмите «ОК» и закройте окно
 
-![Настройки приложения](/public/pages/linux/nekoray/4.webp)
+![Настройки приложения](/pages/linux/nekoray/4.webp)
 
 ## Шаг 4. Подключитесь и пользуйтесь
 
@@ -144,14 +144,14 @@ kbuildsycoca5
 * Не требует особых прав для запуска
 :::
 
-![Подключение к VPN](/public/pages/linux/nekoray/5.webp)
+![Подключение к VPN](/pages/linux/nekoray/5.webp)
 
 ## Как обновить конфигурацию (подписку) в NekoRay?
 Обновлять подписку в приложении необходимо при добавлении новых стран или изменении серверных параметров соединения со стороны VPN-провайдера.
 1. Перейдите в «Настройки» → «Группы»
 2. В открывшемся окне нажмите «Обновить все подписки» или «Обновить» в поле группы определенной подписки
 
-![Подключение к VPN](/public/pages/linux/nekoray/6.webp)
+![Подключение к VPN](/pages/linux/nekoray/6.webp)
 
 ::: warning **Возникли трудности?** 
 При возникновении сложностей с настройкой или проблем с подключением, вы можете обратиться в службу поддержки [@SaturnVPN_Support](https://t.me/SaturnVPN_Support) – обязательно поможем!

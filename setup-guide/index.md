@@ -31,22 +31,22 @@ description: В данном руководстве приводятся сов�
 <CompactCards :cards="[
   {
     title: '⭐ v2RayTun',
-    image: '/public/pages/windows/v2raytun.png',
+    image: '/pages/windows/v2raytun.png',
     link: '/setup-guide/windows/v2raytun'
   },
   {
     title: 'Hiddify',
-    image: '/public/pages/windows/hiddify.png',
+    image: '/pages/windows/hiddify.png',
     link: '/setup-guide/windows/hiddify'
   },
   {
     title: 'NekoRay',
-    image: '/public/pages/windows/nekoray.png',
+    image: '/pages/windows/nekoray.png',
     link: '/setup-guide/windows/nekoray'
   },
   {
     title: 'v2rayN',
-    image: '/public/pages/windows/v2rayn.png',
+    image: '/pages/windows/v2rayn.png',
     link: '/setup-guide/windows/v2rayn'
   },
 ]" />
@@ -56,32 +56,32 @@ description: В данном руководстве приводятся сов�
 <CompactCards :cards="[
   {
     title: '⭐ v2RayTun',
-    image: '/public/pages/android/v2raytun.png',
+    image: '/pages/android/v2raytun.png',
     link: '/setup-guide/android/v2raytun'
   },
   {
     title: 'Happ',
-    image: '/public/pages/android/happ.png',
+    image: '/pages/android/happ.png',
     link: '/setup-guide/android/happ'
   },
   {
     title: 'Hiddify',
-    image: '/public/pages/android/hiddify.png',
+    image: '/pages/android/hiddify.png',
     link: '/setup-guide/android/hiddify'
   },
   {
     title: 'NekoRay',
-    image: '/public/pages/android/nekoray.png',
+    image: '/pages/android/nekoray.png',
     link: '/setup-guide/android/nekoray'
   },
   {
     title: 'v2RayNG',
-    image: '/public/pages/android/v2rayng.png',
+    image: '/pages/android/v2rayng.png',
     link: '/setup-guide/android/v2rayng'
   },
   {
     title: 'V2Box',
-    image: '/public/pages/android/v2box.png',
+    image: '/pages/android/v2box.png',
     link: '/setup-guide/android/v2box'
   },
 ]" />
@@ -91,27 +91,27 @@ description: В данном руководстве приводятся сов�
 <CompactCards :cards="[
   {
     title: '⭐ Streisand',
-    image: '/public/pages/ios/streisand.png',
+    image: '/pages/ios/streisand.png',
     link: '/setup-guide/ios/streisand'
   },
   {
     title: 'v2RayTun',
-    image: '/public/pages/ios/v2raytun.png',
+    image: '/pages/ios/v2raytun.png',
     link: '/setup-guide/ios/v2raytun'
   },
   {
     title: 'Happ',
-    image: '/public/pages/ios/happ.png',
+    image: '/pages/ios/happ.png',
     link: '/setup-guide/ios/happ'
   },
   {
     title: 'Hiddify',
-    image: '/public/pages/ios/hiddify.png',
+    image: '/pages/ios/hiddify.png',
     link: '/setup-guide/ios/hiddify'
   },
   {
     title: 'V2Box',
-    image: '/public/pages/ios/v2box.png',
+    image: '/pages/ios/v2box.png',
     link: '/setup-guide/ios/v2box'
   },
 ]" />
@@ -121,22 +121,22 @@ description: В данном руководстве приводятся сов�
 <CompactCards :cards="[
   {
     title: '⭐ v2RayTun',
-    image: '/public/pages/macos/v2raytun.png',
+    image: '/pages/macos/v2raytun.png',
     link: '/setup-guide/macos/v2raytun'
   },
   {
     title: 'Happ',
-    image: '/public/pages/macos/happ.png',
+    image: '/pages/macos/happ.png',
     link: '/setup-guide/macos/happ'
   },
   {
     title: 'Hiddify',
-    image: '/public/pages/macos/hiddify.png',
+    image: '/pages/macos/hiddify.png',
     link: '/setup-guide/macos/hiddify'
   },
   {
     title: 'V2Box',
-    image: '/public/pages/macos/v2box.png',
+    image: '/pages/macos/v2box.png',
     link: '/setup-guide/macos/v2box'
   },
 ]" />
@@ -145,12 +145,12 @@ description: В данном руководстве приводятся сов�
 <CompactCards :cards="[
   {
     title: '⭐ v2RayTun',
-    image: '/public/pages/androidtv/v2raytun.png',
+    image: '/pages/androidtv/v2raytun.png',
     link: '/setup-guide/androidtv/v2raytun'
   },
   {
     title: 'Hiddify',
-    image: '/public/pages/androidtv/hiddify.png',
+    image: '/pages/androidtv/hiddify.png',
     link: '/setup-guide/androidtv/hiddify'
   }
 ]" />
@@ -159,7 +159,7 @@ description: В данном руководстве приводятся сов�
 <CompactCards :cards="[
   {
     title: '⭐ NekoRay',
-    image: '/public/pages/linux/nekoray.png',
+    image: '/pages/linux/nekoray.png',
     link: '/setup-guide/linux/nekoray'
   }
 ]" />
@@ -169,7 +169,7 @@ description: В данном руководстве приводятся сов�
 В российском AppStore могут отсутствовать некоторые приложения для подключения. Для их загрузки необходимо изменить регион аккаунта Apple ID:
 
 <video controls width="100%">
-  <source src="/public/appstore.webm" type="video/mp4">
+  <source src="/appstore.webm" type="video/mp4">
   Ваш браузер не поддерживает видео.
 </video>
 
