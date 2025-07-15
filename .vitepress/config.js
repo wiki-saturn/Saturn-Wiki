@@ -24,10 +24,18 @@ export default defineConfig({
   },
   
   head: [
+    ['script', { async: true, src: 'https://www.googletagmanager.com/gtag/js?id=G-RQGCWMT85F' }],
+    ['script', {}, `
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-RQGCWMT85F');
+    `],
     ['meta', { charset: 'utf-8' }],
     ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1' }],
+    ['meta', { name: 'yandex-verification', content: 'b50710c3c0486d68' }],
     ['meta', { 'http-equiv': 'X-UA-Compatible', content: 'IE=edge' }],
-    
+
     ['meta', { name: 'robots', content: 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1' }],
     ['meta', { name: 'googlebot', content: 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1' }],
     ['meta', { name: 'author', content: 'Saturn VPN' }],
