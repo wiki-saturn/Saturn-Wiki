@@ -11,6 +11,68 @@ function generateMetaTags(title, description, url) {
   ]
 }
 
+// Функция для генерации навигационной цепочки
+function generateBreadcrumbSchema(pageData) {
+  const baseUrl = 'https://saturn-network.com'
+  const pathSegments = pageData.relativePath.replace(/\.md$/, '').split('/').filter(Boolean)
+  
+  if (pathSegments.length === 0) return null
+  
+  const breadcrumbItems = [
+    {
+      '@type': 'ListItem',
+      'position': 1,
+      'name': 'Главная',
+      'item': baseUrl
+    }
+  ]
+  
+  let currentPath = ''
+  pathSegments.forEach((segment, index) => {
+    currentPath += `/${segment}`
+    const position = index + 2
+    
+    // Определяем название раздела на основе пути
+    let name = segment
+    if (segment === 'bot-guide') name = 'Работа с ботом'
+    else if (segment === 'setup-guide') name = 'Настройка VPN'
+    else if (segment === 'android') name = 'Android'
+    else if (segment === 'windows') name = 'Windows'
+    else if (segment === 'ios') name = 'iOS'
+    else if (segment === 'macos') name = 'macOS'
+    else if (segment === 'linux') name = 'Linux'
+    else if (segment === 'tv') name = 'Android TV'
+    else if (segment === 'balance') name = 'Пополнение баланса'
+    else if (segment === 'subscription-purchase') name = 'Покупка подписки'
+    else if (segment === 'subscription-renew') name = 'Продление подписки'
+    else if (segment === 'change-plan') name = 'Смена тарифа'
+    else if (segment === 'prices') name = 'Тарифы'
+    else if (segment === 'contacts') name = 'Контакты'
+    else if (segment === 'terms') name = 'Пользовательское соглашение'
+    else if (segment === 'v2raytun') name = 'v2RayTun'
+    else if (segment === 'happ') name = 'Happ'
+    else if (segment === 'hiddify') name = 'Hiddify'
+    else if (segment === 'nekoray') name = 'Nekoray'
+    else if (segment === 'v2rayng') name = 'v2rayNG'
+    else if (segment === 'v2box') name = 'V2Box'
+    else if (segment === 'v2rayn') name = 'v2RayN'
+    else if (segment === 'streisand') name = 'Streisand'
+    
+    breadcrumbItems.push({
+      '@type': 'ListItem',
+      'position': position,
+      'name': name,
+      'item': `${baseUrl}${currentPath}`
+    })
+  })
+  
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    'itemListElement': breadcrumbItems
+  }
+}
+
 export default defineConfig({
   title: 'Saturn Wiki',
   description: 'Вся необходимая информация для клиентов Saturn VPN, собранная в одном месте. Инструкции по установке и настройке VPN с протоколом VLESS для приложений v2RayTun, v2RayN, v2rayNG, V2Box, Streisand, Nekoray и Hiddify',
@@ -89,6 +151,7 @@ export default defineConfig({
     ['link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/logo.svg' }],
     ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: '/logo.svg' }],
     ['link', { rel: 'mask-icon', href: '/logo.svg', color: '#FF6200' }],
+    ['link', { rel: 'shortcut icon', href: '/logo.svg' }],
     
     ['link', { rel: 'canonical', href: 'https://saturn-network.com' }],
     ['link', { rel: 'alternate', hreflang: 'ru', href: 'https://saturn-network.com' }],
@@ -155,6 +218,11 @@ export default defineConfig({
     const canonicalUrl = `https://saturn-network.com${pageData.relativePath.replace(/\.md$/, '')}`
     head.push(['link', { rel: 'canonical', href: canonicalUrl }])
     head.push(['meta', { property: 'og:url', content: canonicalUrl }])
+    
+    const breadcrumbSchema = generateBreadcrumbSchema(pageData)
+    if (breadcrumbSchema) {
+      head.push(['script', { type: 'application/ld+json' }, JSON.stringify(breadcrumbSchema)])
+    }
     
     return head
   },
