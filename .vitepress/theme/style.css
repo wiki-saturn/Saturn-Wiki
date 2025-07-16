@@ -257,3 +257,40 @@ main table {
     transform: none;
   }
 }
+
+/* Исправление размытых изображений в Safari */
+.VPNav .logo img,
+.VPNav .logo svg,
+.VPHero .image-src,
+.VPHero .image-src img,
+.VPHero .image-src svg {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  perspective: 1000;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Дополнительные стили для SVG в Safari */
+.VPNav .logo svg,
+.VPHero .image-src svg {
+  shape-rendering: geometricPrecision;
+  text-rendering: optimizeLegibility;
+}
+
+/* Исправление для Retina дисплеев */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .VPNav .logo img,
+  .VPNav .logo svg,
+  .VPHero .image-src,
+  .VPHero .image-src img,
+  .VPHero .image-src svg {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+}
