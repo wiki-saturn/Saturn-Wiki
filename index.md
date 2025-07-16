@@ -2,7 +2,7 @@
 layout: home
 
 hero:
-  name: "Saturn Wiki"
+  name: "Saturn Wiki "
   text: "VPN нового поколения прямо в Telegram"
   tagline: Легко верните доступ к YouTube, TikTok, Twitch, ChatGPT и другим ресурсам с надежным решением на протоколе VLESS.
   image:
