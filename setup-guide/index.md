@@ -31,22 +31,22 @@ description: В данном руководстве приводятся сов�
 <CompactCards :cards="[
   {
     title: '⭐ v2RayTun',
-    image: '/pages/windows/v2raytun.png',
+    image: '/pages/windows/v2raytun.webp',
     link: '/setup-guide/windows/v2raytun'
   },
   {
     title: 'Hiddify',
-    image: '/pages/windows/hiddify.png',
+    image: '/pages/windows/hiddify.webp',
     link: '/setup-guide/windows/hiddify'
   },
   {
     title: 'NekoRay',
-    image: '/pages/windows/nekoray.png',
+    image: '/pages/windows/nekoray.webp',
     link: '/setup-guide/windows/nekoray'
   },
   {
     title: 'v2rayN',
-    image: '/pages/windows/v2rayn.png',
+    image: '/pages/windows/v2rayn.webp',
     link: '/setup-guide/windows/v2rayn'
   },
 ]" />
@@ -56,32 +56,32 @@ description: В данном руководстве приводятся сов�
 <CompactCards :cards="[
   {
     title: '⭐ v2RayTun',
-    image: '/pages/android/v2raytun.png',
+    image: '/pages/android/v2raytun.webp',
     link: '/setup-guide/android/v2raytun'
   },
   {
     title: 'Happ',
-    image: '/pages/android/happ.png',
+    image: '/pages/android/happ.webp',
     link: '/setup-guide/android/happ'
   },
   {
     title: 'Hiddify',
-    image: '/pages/android/hiddify.png',
+    image: '/pages/android/hiddify.webp',
     link: '/setup-guide/android/hiddify'
   },
   {
     title: 'NekoRay',
-    image: '/pages/android/nekoray.png',
+    image: '/pages/android/nekoray.webp',
     link: '/setup-guide/android/nekoray'
   },
   {
     title: 'v2RayNG',
-    image: '/pages/android/v2rayng.png',
+    image: '/pages/android/v2rayng.webp',
     link: '/setup-guide/android/v2rayng'
   },
   {
     title: 'V2Box',
-    image: '/pages/android/v2box.png',
+    image: '/pages/android/v2box.webp',
     link: '/setup-guide/android/v2box'
   },
 ]" />
@@ -91,27 +91,27 @@ description: В данном руководстве приводятся сов�
 <CompactCards :cards="[
   {
     title: '⭐ Streisand',
-    image: '/pages/ios/streisand.png',
+    image: '/pages/ios/streisand.webp',
     link: '/setup-guide/ios/streisand'
   },
   {
     title: 'v2RayTun',
-    image: '/pages/ios/v2raytun.png',
+    image: '/pages/ios/v2raytun.webp',
     link: '/setup-guide/ios/v2raytun'
   },
   {
     title: 'Happ',
-    image: '/pages/ios/happ.png',
+    image: '/pages/ios/happ.webp',
     link: '/setup-guide/ios/happ'
   },
   {
     title: 'Hiddify',
-    image: '/pages/ios/hiddify.png',
+    image: '/pages/ios/hiddify.webp',
     link: '/setup-guide/ios/hiddify'
   },
   {
     title: 'V2Box',
-    image: '/pages/ios/v2box.png',
+    image: '/pages/ios/v2box.webp',
     link: '/setup-guide/ios/v2box'
   },
 ]" />
@@ -121,22 +121,22 @@ description: В данном руководстве приводятся сов�
 <CompactCards :cards="[
   {
     title: '⭐ v2RayTun',
-    image: '/pages/macos/v2raytun.png',
+    image: '/pages/macos/v2raytun.webp',
     link: '/setup-guide/macos/v2raytun'
   },
   {
     title: 'Happ',
-    image: '/pages/macos/happ.png',
+    image: '/pages/macos/happ.webp',
     link: '/setup-guide/macos/happ'
   },
   {
     title: 'Hiddify',
-    image: '/pages/macos/hiddify.png',
+    image: '/pages/macos/hiddify.webp',
     link: '/setup-guide/macos/hiddify'
   },
   {
     title: 'V2Box',
-    image: '/pages/macos/v2box.png',
+    image: '/pages/macos/v2box.webp',
     link: '/setup-guide/macos/v2box'
   },
 ]" />
@@ -145,12 +145,12 @@ description: В данном руководстве приводятся сов�
 <CompactCards :cards="[
   {
     title: '⭐ v2RayTun',
-    image: '/pages/androidtv/v2raytun.png',
+    image: '/pages/androidtv/v2raytun.webp',
     link: '/setup-guide/androidtv/v2raytun'
   },
   {
     title: 'Hiddify',
-    image: '/pages/androidtv/hiddify.png',
+    image: '/pages/androidtv/hiddify.webp',
     link: '/setup-guide/androidtv/hiddify'
   }
 ]" />
@@ -159,7 +159,7 @@ description: В данном руководстве приводятся сов�
 <CompactCards :cards="[
   {
     title: '⭐ NekoRay',
-    image: '/pages/linux/nekoray.png',
+    image: '/pages/linux/nekoray.webp',
     link: '/setup-guide/linux/nekoray'
   }
 ]" />
