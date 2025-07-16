@@ -127,7 +127,7 @@ export default defineConfig({
     transformItems: (items) => {
       return items.map((item) => ({
         ...item,
-        changefreq: 'weekly',
+        changefreq: 'daily',
         priority: item.url === '/' ? 1.0 : 0.8
       }))
     }
