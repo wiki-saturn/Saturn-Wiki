@@ -212,7 +212,7 @@ export default defineConfig({
       head.push(['meta', { name: 'twitter:description', content: pageData.frontmatter.description }])
     }
     
-    const canonicalUrl = `https://saturn-network.com${pageData.relativePath.replace(/\.md$/, '')}`
+    const canonicalUrl = `https://saturn-network.com/${pageData.relativePath.replace(/\.md$/, '')}`
     head.push(['link', { rel: 'canonical', href: canonicalUrl }])
     head.push(['meta', { property: 'og:url', content: canonicalUrl }])
     
