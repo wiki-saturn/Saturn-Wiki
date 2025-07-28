@@ -292,11 +292,11 @@ export default defineConfig({
         {
           text: 'iOS, iPadOS',
           items: [
-            { text: 'Streisand (рекомендуется)', link: '/setup-guide/ios/streisand' },
-            { text: 'v2RayTun', link: '/setup-guide/ios/v2raytun' },
+            { text: 'v2RayTun (рекомендуется)', link: '/setup-guide/ios/v2raytun' },
             { text: 'Happ', link: '/setup-guide/ios/happ' },
             { text: 'Hiddify', link: '/setup-guide/ios/hiddify' },
-            { text: 'V2Box', link: '/setup-guide/ios/v2box' }
+            { text: 'V2Box', link: '/setup-guide/ios/v2box' },
+            { text: 'Streisand', link: '/setup-guide/ios/streisand' }
           ]
         },
         {
