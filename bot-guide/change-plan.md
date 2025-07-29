@@ -1,3 +1,15 @@
+---
+title: Смена тарифного плана
+description: Руководство по смене тарифа в Telegram-боте @SaturnVPN_Bot
+head:
+  - - meta
+    - property: og:image
+      content: /opengraph-4.webp
+  - - meta
+    - name: twitter:image
+      content: /opengraph-4.webp
+---
+
 # Смена тарифного плана
 
 Каждому пользователю доступен переход на другой тарифный план в любой момент использования. На данной странице представлены правила и руководство смены тарифного плана.

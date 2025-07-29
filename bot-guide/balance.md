@@ -1,4 +1,16 @@
-# Пополнение баланса в @SaturnVPN_bot
+---
+title: Пополнение баланса
+description: Руководство по пополнению счёта в Telegram-боте @SaturnVPN_Bot
+head:
+  - - meta
+    - property: og:image
+      content: /opengraph-1.webp
+  - - meta
+    - name: twitter:image
+      content: /opengraph-1.webp
+---
+
+# Пополнение баланса
 
 ::: warning **Обратите внимание**
 При оплате вы пополняете счёт в боте, с которого можно оплатить тарифный план.

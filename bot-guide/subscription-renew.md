@@ -1,4 +1,16 @@
-# Продление подписки в Saturn VPN
+---
+title: Продление подписки
+description: Руководство по продлению платного ключа в Telegram-боте @SaturnVPN_Bot
+head:
+  - - meta
+    - property: og:image
+      content: /opengraph-3.webp
+  - - meta
+    - name: twitter:image
+      content: /opengraph-3.webp
+---
+
+# Продление подписки
 
 ::: info Переход с пробного периода
 При переходе с пробного тарифа на полный пройдите все этапы получения ключа для платной подписки. Начните с «Купить VPN».
