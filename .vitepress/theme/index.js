@@ -10,7 +10,7 @@ import VideoPlayer from './components/VideoPlayer.vue'
 
 import mediumZoom from 'medium-zoom'
 import { onMounted, watch, nextTick } from 'vue'
-import { useRoute } from 'vitepress'
+import { useRoute, useData } from 'vitepress'
 
 export default {
   extends: DefaultTheme,
@@ -29,12 +29,22 @@ export default {
   },
   setup() {
     const route = useRoute()
+    const { isDark } = useData()
+    
+    const updateThemeColor = () => {
+      const themeColorMeta = document.querySelector('meta[name="theme-color"]')
+      if (themeColorMeta) {
+        const color = isDark.value ? '#101010' : '#ffffff'
+        themeColorMeta.setAttribute('content', color)
+      }
+    }
+    
     const initZoom = () => {
       const isMobile = window.innerWidth <= 768
       
             if (!isMobile) {
-        const isDark = document.documentElement.classList.contains('dark')
-        const backgroundColor = isDark ? 'rgba(0, 0, 0, 0.6)' : 'rgba(248, 248, 248, 0.6)'
+        const isDarkMode = document.documentElement.classList.contains('dark')
+        const backgroundColor = isDarkMode ? 'rgba(0, 0, 0, 0.6)' : 'rgba(248, 248, 248, 0.6)'
         
         mediumZoom('.main img:not(.icon-image)', {
           background: backgroundColor,
@@ -43,9 +53,16 @@ export default {
         })
       }
     }
+    
     onMounted(() => {
       initZoom()
+      updateThemeColor()
     })
+    
+    watch(isDark, () => {
+      updateThemeColor()
+    })
+    
     watch(
       () => route.path,
       () => nextTick(() => initZoom())

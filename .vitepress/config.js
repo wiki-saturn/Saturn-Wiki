@@ -114,8 +114,7 @@ export default defineConfig({
     ['meta', { name: 'googlebot', content: 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1' }],
     ['meta', { name: 'author', content: 'Saturn VPN' }],
     ['meta', { name: 'generator', content: 'VitePress' }],
-    ['meta', { name: 'theme-color', content: '#ffffff', media: '(prefers-color-scheme: light)' }],
-    ['meta', { name: 'theme-color', content: '#101010', media: '(prefers-color-scheme: dark)' }],
+    ['meta', { name: 'theme-color', content: '#ffffff' }],
     
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:site_name', content: 'Saturn Wiki' }],
