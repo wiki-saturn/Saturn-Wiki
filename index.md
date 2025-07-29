@@ -27,7 +27,7 @@ hero:
 ---
 
 ::: info Навигация по Wiki на мобильном устройстве 
-Для навигации по базе знаний используйте меню <img src="/icons/menu.svg" alt="Меню" style="display: inline; height: 2em; vertical-align: middle; margin: 0 2px;"> сверху
+Для навигации по базе знаний используйте «Меню» (<img src="/icons/menu.svg" alt="Меню" style="display: inline; height: 2em; vertical-align: middle; margin: 0 2px;">) сверху
 :::
 
 ::: info Нужна помощь?
