@@ -1,6 +1,13 @@
 ---
 title: Подключение к VPN через v2RayTun на Android (VLESS)
 description: В данном руководстве описывается процесс загрузки, установки и настройки приложения v2RayTun на Android устройстве для удобного использования VPN через протокол VLESS.
+head:
+  - - meta
+    - property: og:image
+      content: /pages/android/v2raytun/opengraph.webp
+  - - meta
+    - name: twitter:image
+      content: /pages/android/v2raytun/opengraph.webp
 ---
 
 # Подключение к VPN через v2RayTun на Android (VLESS)

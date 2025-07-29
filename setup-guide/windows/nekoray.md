@@ -1,6 +1,13 @@
 ---
 title: Подключение к VPN через NekoRay на Windows (VLESS)
 description: В данном руководстве описывается процесс загрузки, установки и настройки приложения NekoRay на ПК или ноутбуке с Windows для удобного использования VPN через протокол VLESS.
+head:
+  - - meta
+    - property: og:image
+      content: /pages/windows/nekoray/opengraph.webp
+  - - meta
+    - name: twitter:image
+      content: /pages/windows/nekoray/opengraph.webp
 ---
 
 # Подключение к VPN через NekoRay на Windows (VLESS)

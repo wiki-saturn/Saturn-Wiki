@@ -1,6 +1,13 @@
 ---
 title: Подключение к VPN через Happ на iPhone и iPad с iOS или iPadOS (VLESS)
 description: В данном руководстве описывается процесс загрузки, установки и настройки приложения Happ на iPhone и iPad с iOS или iPadOS для удобного использования VPN через протокол VLESS.
+head:
+  - - meta
+    - property: og:image
+      content: /pages/ios/happ/opengraph.webp
+  - - meta
+    - name: twitter:image
+      content: /pages/ios/happ/opengraph.webp
 ---
 
 # Подключение к VPN через Happ на iPhone и iPad с iOS или iPadOS (VLESS)

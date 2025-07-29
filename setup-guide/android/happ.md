@@ -1,6 +1,13 @@
 ---
 title: Подключение к VPN через Happ на Android (VLESS)
 description: В данном руководстве описывается процесс загрузки, установки и настройки приложения Happ на Android устройстве для удобного использования VPN через протокол VLESS.
+head:
+  - - meta
+    - property: og:image
+      content: /pages/android/happ/opengraph.webp
+  - - meta
+    - name: twitter:image
+      content: /pages/android/happ/opengraph.webp
 ---
 
 # Подключение к VPN через Happ на Android (VLESS)

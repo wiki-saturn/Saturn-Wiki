@@ -1,6 +1,13 @@
 ---
 title: Подключение к VPN через Happ на macOS (VLESS)
 description: В данном руководстве описывается процесс загрузки, установки и настройки приложения Happ на компьютере Mac для удобного использования VPN через протокол VLESS.
+head:
+  - - meta
+    - property: og:image
+      content: /pages/macos/happ/opengraph.webp
+  - - meta
+    - name: twitter:image
+      content: /pages/macos/happ/opengraph.webp
 ---
 
 # Подключение к VPN через Happ на macOS (VLESS)

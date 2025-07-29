@@ -1,6 +1,13 @@
 ---
 title: Подключение к VPN через Linux на Android (VLESS)
 description: В данном руководстве описывается процесс загрузки, установки и настройки приложения NekoRay на Linux для удобного использования VPN через протокол VLESS.
+head:
+  - - meta
+    - property: og:image
+      content: /pages/linux/nekoray/opengraph.webp
+  - - meta
+    - name: twitter:image
+      content: /pages/linux/nekoray/opengraph.webp
 ---
 
 # Подключение к VPN через NekoRay на Linux (VLESS)

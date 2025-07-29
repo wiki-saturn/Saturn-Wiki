@@ -1,6 +1,13 @@
 ---
 title: Подключение к VPN через v2rayNG на Android (VLESS)
 description: В данном руководстве описывается процесс загрузки, установки и настройки приложения v2rayNG на Android устройстве для удобного использования VPN через протокол VLESS.
+head:
+  - - meta
+    - property: og:image
+      content: /pages/android/v2rayng/opengraph.webp
+  - - meta
+    - name: twitter:image
+      content: /pages/android/v2rayng/opengraph.webp
 ---
 
 # Подключение к VPN через v2rayNG на Android (VLESS)

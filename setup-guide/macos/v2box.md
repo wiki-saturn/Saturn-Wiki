@@ -1,6 +1,13 @@
 ---
 title: Подключение к VPN через V2Box на macOS (VLESS)
 description: В данном руководстве описывается процесс загрузки, установки и настройки приложения V2Box на компьютере Mac с процессором Intel для удобного использования VPN через протокол VLESS.
+head:
+  - - meta
+    - property: og:image
+      content: /pages/macos/v2box/opengraph.webp
+  - - meta
+    - name: twitter:image
+      content: /pages/macos/v2box/opengraph.webp
 ---
 
 # Подключение к VPN через V2Box на macOS (VLESS)
