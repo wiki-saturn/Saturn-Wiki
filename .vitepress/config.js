@@ -228,6 +228,10 @@ export default defineConfig({
       { text: 'Как настроить VPN на устройстве', link: '/setup-guide/' },
     ],
 
+    socialLinks: [
+      { icon: 'telegram', link: 'https://t.me/SaturnVPN_bot?start=docs' }
+    ],
+
     sidebar: {
       '/bot-guide/': [
         {
