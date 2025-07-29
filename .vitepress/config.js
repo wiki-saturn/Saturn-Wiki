@@ -12,7 +12,7 @@ function generateMetaTags(title, description, url) {
 }
 
 function generateBreadcrumbSchema(pageData) {
-  const baseUrl = 'https://saturn-network.com'
+  const baseUrl = 'https://saturn-online.su'
   const pathSegments = pageData.relativePath.replace(/\.md$/, '').split('/').filter(Boolean)
   
   if (pathSegments.length === 0) return null
@@ -120,11 +120,11 @@ export default defineConfig({
     ['meta', { property: 'og:site_name', content: 'Saturn Wiki' }],
     ['meta', { property: 'og:title', content: 'Saturn Wiki - База знаний для клиентов Saturn VPN' }],
     ['meta', { property: 'og:description', content: 'Полная база знаний Saturn VPN. Инструкции по установке и настройке VPN приложений для всех платформ: Windows, Android, iOS, macOS, Linux' }],
-    ['meta', { property: 'og:image', content: 'https://saturn-network.com/hero-logo.svg' }],
+    ['meta', { property: 'og:image', content: 'https://saturn-online.su/hero-logo.svg' }],
     ['meta', { property: 'og:image:width', content: '1200' }],
     ['meta', { property: 'og:image:height', content: '630' }],
     ['meta', { property: 'og:image:alt', content: 'Saturn VPN Logo' }],
-    ['meta', { property: 'og:url', content: 'https://saturn-network.com' }],
+    ['meta', { property: 'og:url', content: 'https://saturn-online.su' }],
     ['meta', { property: 'og:locale', content: 'ru_RU' }],
     
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
@@ -132,7 +132,7 @@ export default defineConfig({
     ['meta', { name: 'twitter:creator', content: '@SaturnVPN' }],
     ['meta', { name: 'twitter:title', content: 'Saturn Wiki - VPN инструкции и настройка' }],
     ['meta', { name: 'twitter:description', content: 'Полная база знаний Saturn VPN. Инструкции по установке и настройке VPN приложений для всех платформ' }],
-    ['meta', { name: 'twitter:image', content: 'https://saturn-network.com/hero-logo.svg' }],
+    ['meta', { name: 'twitter:image', content: 'https://saturn-online.su/hero-logo.svg' }],
     ['meta', { name: 'twitter:image:alt', content: 'Saturn VPN Logo' }],
     
     ['meta', { name: 'keywords', content: 'Saturn VPN, VLESS, v2ray, vpn инструкции, настройка vpn, v2raytun, hiddify, nekoray, telegram vpn bot, vpn android, vpn ios, vpn windows, vpn macos, vpn linux' }],
@@ -150,9 +150,9 @@ export default defineConfig({
     ['link', { rel: 'mask-icon', href: '/logo.svg', color: '#FF6200' }],
     ['link', { rel: 'shortcut icon', href: '/logo.svg' }],
     
-    ['link', { rel: 'canonical', href: 'https://saturn-network.com' }],
-    ['link', { rel: 'alternate', hreflang: 'ru', href: 'https://saturn-network.com' }],
-    ['link', { rel: 'alternate', hreflang: 'x-default', href: 'https://saturn-network.com' }],
+    ['link', { rel: 'canonical', href: 'https://saturn-online.su' }],
+    ['link', { rel: 'alternate', hreflang: 'ru', href: 'https://saturn-online.su' }],
+    ['link', { rel: 'alternate', hreflang: 'x-default', href: 'https://saturn-online.su' }],
     
     ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
     ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }],
@@ -162,19 +162,19 @@ export default defineConfig({
       '@type': 'WebSite',
       name: 'Saturn Wiki',
       description: 'Полная база знаний Saturn VPN с инструкциями по настройке',
-      url: 'https://saturn-network.com',
+      url: 'https://saturn-online.su',
       publisher: {
         '@type': 'Organization',
         name: 'Saturn VPN',
-        url: 'https://saturn-network.com',
+        url: 'https://saturn-online.su',
         logo: {
           '@type': 'ImageObject',
-          url: 'https://saturn-network.com/logo.svg'
+          url: 'https://saturn-online.su/logo.svg'
         }
       },
       potentialAction: {
         '@type': 'SearchAction',
-        target: 'https://saturn-network.com/?q={search_term_string}',
+        target: 'https://saturn-online.su/?q={search_term_string}',
         'query-input': 'required name=search_term_string'
       }
     })]
@@ -183,7 +183,7 @@ export default defineConfig({
   cleanUrls: true,
   
   sitemap: {
-    hostname: 'https://saturn-network.com',
+    hostname: 'https://saturn-online.su',
     transformItems: (items) => {
       return items.map((item) => ({
         ...item,
@@ -212,7 +212,7 @@ export default defineConfig({
       head.push(['meta', { name: 'twitter:description', content: pageData.frontmatter.description }])
     }
     
-    const canonicalUrl = `https://saturn-network.com/${pageData.relativePath.replace(/\.md$/, '')}`
+    const canonicalUrl = `https://saturn-online.su/${pageData.relativePath.replace(/\.md$/, '')}`
     head.push(['link', { rel: 'canonical', href: canonicalUrl }])
     head.push(['meta', { property: 'og:url', content: canonicalUrl }])
     
