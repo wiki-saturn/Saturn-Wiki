@@ -114,22 +114,11 @@ export default defineConfig({
     
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:site_name', content: 'Saturn Wiki' }],
-    ['meta', { property: 'og:title', content: 'Saturn Wiki - База знаний для клиентов Saturn VPN' }],
-    ['meta', { property: 'og:description', content: 'Полная база знаний Saturn VPN. Инструкции по установке и настройке VPN приложений для всех платформ: Windows, Android, iOS, macOS, Linux' }],
-    ['meta', { property: 'og:image', content: 'https://saturn-online.su/hero-logo.svg' }],
-    ['meta', { property: 'og:image:width', content: '1200' }],
-    ['meta', { property: 'og:image:height', content: '630' }],
-    ['meta', { property: 'og:image:alt', content: 'Saturn VPN Logo' }],
-    ['meta', { property: 'og:url', content: 'https://saturn-online.su' }],
     ['meta', { property: 'og:locale', content: 'ru_RU' }],
     
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
     ['meta', { name: 'twitter:site', content: '@SaturnVPN' }],
     ['meta', { name: 'twitter:creator', content: '@SaturnVPN' }],
-    ['meta', { name: 'twitter:title', content: 'Saturn Wiki - VPN инструкции и настройка' }],
-    ['meta', { name: 'twitter:description', content: 'Полная база знаний Saturn VPN. Инструкции по установке и настройке VPN приложений для всех платформ' }],
-    ['meta', { name: 'twitter:image', content: 'https://saturn-online.su/hero-logo.svg' }],
-    ['meta', { name: 'twitter:image:alt', content: 'Saturn VPN Logo' }],
     
     ['meta', { name: 'keywords', content: 'Saturn VPN, VLESS, v2ray, vpn инструкции, настройка vpn, v2raytun, hiddify, nekoray, telegram vpn bot, vpn android, vpn ios, vpn windows, vpn macos, vpn linux' }],
     

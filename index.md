@@ -4,8 +4,32 @@ head:
     - property: og:image
       content: /opengraph-main.webp
   - - meta
+    - property: og:image:width
+      content: "1200"
+  - - meta
+    - property: og:image:height
+      content: "630"
+  - - meta
+    - property: og:image:alt
+      content: "Saturn VPN - VPN нового поколения"
+  - - meta
+    - property: og:title
+      content: "Saturn Wiki - VPN нового поколения прямо в Telegram"
+  - - meta
+    - property: og:description
+      content: "Легко верните доступ к YouTube, TikTok, Twitch, ChatGPT и другим ресурсам с надежным решением на протоколе VLESS."
+  - - meta
+    - property: og:url
+      content: https://saturn-online.su/
+  - - meta
     - name: twitter:image
       content: /opengraph-main.webp
+  - - meta
+    - name: twitter:title
+      content: "Saturn Wiki - VPN нового поколения"
+  - - meta
+    - name: twitter:description
+      content: "Легко верните доступ к YouTube, TikTok, Twitch, ChatGPT и другим ресурсам с надежным решением на протоколе VLESS."
 
 layout: home
 
