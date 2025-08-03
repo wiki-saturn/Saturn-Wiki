@@ -142,7 +142,7 @@ export default defineConfig({
     ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }],
     ['link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: 'https://i.postimg.cc/wMy6hqsP/icon.png' }],
     ['link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: 'https://i.postimg.cc/zDs7jgRF/icon32.png' }],
-    ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: 'https://i.postimg.cc/wvt55qqr/icon180.png' }],
+    ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: 'https://i.postimg.cc/YCDGFsnb/logo.png' }],
     ['link', { rel: 'mask-icon', href: '/logo.svg', color: '#FF6200' }],
     ['link', { rel: 'shortcut icon', href: '/logo.svg' }],
     
