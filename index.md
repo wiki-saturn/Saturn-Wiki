@@ -14,10 +14,10 @@ head:
       content: "Saturn VPN - VPN нового поколения"
   - - meta
     - property: og:title
-      content: "Saturn Wiki - VPN нового поколения прямо в Telegram"
+      content: "Saturn Wiki - база знаний Saturn VPN"
   - - meta
     - property: og:description
-      content: "Легко верните доступ к YouTube, TikTok, Twitch, ChatGPT и другим ресурсам с надежным решением на протоколе VLESS."
+      content: "Инструкции по установке и настройке VPN на протоколе VLESS"
   - - meta
     - property: og:url
       content: https://saturn-online.su/
@@ -26,10 +26,10 @@ head:
       content: /opengraph-main.webp
   - - meta
     - name: twitter:title
-      content: "Saturn Wiki - VPN нового поколения"
+      content: "Saturn Wiki - база знаний Saturn VPN"
   - - meta
     - name: twitter:description
-      content: "Легко верните доступ к YouTube, TikTok, Twitch, ChatGPT и другим ресурсам с надежным решением на протоколе VLESS."
+      content: "Инструкции по установке и настройке VPN на протоколе VLESS"
 
 layout: home
 
