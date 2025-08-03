@@ -1,4 +1,12 @@
 ---
+head:
+  - - meta
+    - property: og:image
+      content: /opengraph-main.webp
+  - - meta
+    - name: twitter:image
+      content: /opengraph-main.webp
+
 layout: home
 
 hero:
