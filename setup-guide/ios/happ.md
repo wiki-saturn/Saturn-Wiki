@@ -15,6 +15,7 @@ head:
 #### В данном руководстве описывается процесс загрузки, установки и настройки приложения Happ на iPhone и iPad с iOS или iPadOS для удобного использования VPN через протокол VLESS.
 
 * Требуется iOS 15.0 или новее.
+* [Загрузить в AppStore (Для Российских аккаунтов) →](https://apps.apple.com/ru/app/happ-proxy-utility-plus/id6746188973)
 * [Загрузить в AppStore →](https://apps.apple.com/us/app/happ-proxy-utility/id6504287215)
 * [Документация →](https://www.happ.su/main/ru)
 
