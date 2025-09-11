@@ -58,10 +58,6 @@ hero:
       link: /setup-guide/
 ---
 
-::: info Навигация по Wiki на мобильном устройстве 
-Для навигации по базе знаний используйте «Меню» (<img src="/icons/menu.svg" alt="Меню" style="display: inline; height: 2em; vertical-align: middle; margin: 0 2px;">) сверху
-:::
-
 ::: info Нужна помощь?
 Если интересующей информации нет в базе знаний, вы можете обратиться в службу поддержки [@SaturnVPN_Support](https://t.me/SaturnVPN_Support) - мы всегда на связи и готовы помочь!
 ::: 
