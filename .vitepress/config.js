@@ -12,7 +12,7 @@ function generateMetaTags(title, description, url) {
 }
 
 function generateBreadcrumbSchema(pageData) {
-  const baseUrl = 'https://saturn-wiki.com'
+  const baseUrl = 'https://wiki-saturn.org'
   const pathSegments = pageData.relativePath.replace(/\.md$/, '').split('/').filter(Boolean)
   
   if (pathSegments.length === 0) return null
@@ -135,9 +135,9 @@ export default defineConfig({
     ['link', { rel: 'mask-icon', href: '/logo.svg', color: '#FF6200' }],
     ['link', { rel: 'shortcut icon', href: '/logo.svg' }],
     
-    ['link', { rel: 'canonical', href: 'https://saturn-wiki.com' }],
-    ['link', { rel: 'alternate', hreflang: 'ru', href: 'https://saturn-wiki.com' }],
-    ['link', { rel: 'alternate', hreflang: 'x-default', href: 'https://saturn-wiki.com' }],
+    ['link', { rel: 'canonical', href: 'https://wiki-saturn.org' }],
+    ['link', { rel: 'alternate', hreflang: 'ru', href: 'https://wiki-saturn.org' }],
+    ['link', { rel: 'alternate', hreflang: 'x-default', href: 'https://wiki-saturn.org' }],
     
     ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
     ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }],
@@ -147,19 +147,19 @@ export default defineConfig({
       '@type': 'WebSite',
       name: 'Saturn Wiki',
       description: 'Полная база знаний Saturn VPN с инструкциями по настройке',
-      url: 'https://saturn-wiki.com',
+      url: 'https://wiki-saturn.org',
       publisher: {
         '@type': 'Organization',
         name: 'Saturn VPN',
-        url: 'https://saturn-wiki.com',
+        url: 'https://wiki-saturn.org',
         logo: {
           '@type': 'ImageObject',
-          url: 'https://saturn-wiki.com/logo.svg'
+          url: 'https://wiki-saturn.org/logo.svg'
         }
       },
       potentialAction: {
         '@type': 'SearchAction',
-        target: 'https://saturn-wiki.com/?q={search_term_string}',
+        target: 'https://wiki-saturn.org/?q={search_term_string}',
         'query-input': 'required name=search_term_string'
       }
     })]
@@ -168,7 +168,7 @@ export default defineConfig({
   cleanUrls: true,
   
   sitemap: {
-    hostname: 'https://saturn-wiki.com',
+    hostname: 'https://wiki-saturn.org',
     transformItems: (items) => {
       return items.map((item) => ({
         ...item,
@@ -197,7 +197,7 @@ export default defineConfig({
       head.push(['meta', { name: 'twitter:description', content: pageData.frontmatter.description }])
     }
     
-    const canonicalUrl = `https://saturn-wiki.com/${pageData.relativePath.replace(/\.md$/, '')}`
+    const canonicalUrl = `https://wiki-saturn.org/${pageData.relativePath.replace(/\.md$/, '')}`
     head.push(['link', { rel: 'canonical', href: canonicalUrl }])
     head.push(['meta', { property: 'og:url', content: canonicalUrl }])
     
@@ -218,7 +218,7 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'telegram', link: 'https://t.me/SaturnVPN_bot?start=docs' }
+      { icon: 'telegram', link: 'https://yagla.tv/cmHVGSN' }
     ],
 
     sidebar: {

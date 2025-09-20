@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://saturn-wiki.com/sitemap.xml
+Sitemap: https://wiki-saturn.org/sitemap.xml
 
 # Crawl-delay
 Crawl-delay: 1

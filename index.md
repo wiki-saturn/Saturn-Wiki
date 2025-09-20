@@ -20,7 +20,7 @@ head:
       content: "Инструкции по установке и настройке VPN на протоколе VLESS"
   - - meta
     - property: og:url
-      content: https://saturn-wiki.com/
+      content: https://wiki-saturn.org/
   - - meta
     - name: twitter:image
       content: /opengraph-main.webp
@@ -43,7 +43,7 @@ hero:
   actions:
     - theme: brand
       text: Открыть Telegram-бот
-      link: https://t.me/SaturnVPN_bot?start=docs
+      link: https://yagla.tv/cmHVGSN
     - theme: brand
       text: Служба поддержки
       link: https://t.me/SaturnVPN_Support
