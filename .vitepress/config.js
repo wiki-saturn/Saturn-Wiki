@@ -72,7 +72,7 @@ function generateBreadcrumbSchema(pageData) {
 
 export default defineConfig({
   title: 'Saturn Wiki',
-  description: 'Вся необходимая информация для клиентов Saturn VPN, собранная в одном месте. Инструкции по установке и настройке VPN с протоколом VLESS для приложений v2RayTun, v2RayN, v2rayNG, V2Box, Streisand, Nekoray и Hiddify',
+  description: 'Инструкции по установке и настройке v2RayTun, v2RayN, v2rayNG, V2Box, Streisand, Nekoray и Hiddify',
   
   base: '/',
   
