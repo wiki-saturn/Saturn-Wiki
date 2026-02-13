@@ -178,7 +178,7 @@ export default defineConfig({
     }
   },
   
-  lastUpdated: true,
+  lastUpdated: false,
   metaChunk: true,
   
   cacheDir: './.vitepress/cache',
@@ -226,8 +226,7 @@ export default defineConfig({
         {
           text: 'Работа с ботом',
           items: [
-            { text: 'Начало работы', link: '/bot-guide/' },
-            { text: 'Пополнение баланса', link: '/bot-guide/balance' }
+            { text: 'Начало работы', link: '/bot-guide/' }
           ]
         },
         {
@@ -358,10 +357,6 @@ export default defineConfig({
     docFooter: {
       prev: 'Предыдущая страница',
       next: 'Следующая страница'
-    },
-    
-    lastUpdated: {
-      text: 'Последнее обновление'
     },
 
     darkModeSwitchLabel: 'Тёмная тема',
