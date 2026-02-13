@@ -20,7 +20,7 @@ head:
       content: "Инструкции по установке и настройке VPN на протоколе VLESS"
   - - meta
     - property: og:url
-      content: https://wiki-saturn.org/
+      content: https://saturn-wiki.club/
   - - meta
     - name: twitter:image
       content: /opengraph-main.webp
